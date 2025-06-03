@@ -67,8 +67,8 @@ export function AccessibleSearchInput({
     }, [selectedIndex]);
 
     return (
-        <div className="relative" data-oid="ntovz2a">
-            <div className="relative" data-oid="ujgdwuy">
+        <div className="relative" data-oid="_-ggcta">
+            <div className="relative" data-oid="_86q51o">
                 <input
                     ref={inputRef}
                     type="text"
@@ -88,7 +88,7 @@ export function AccessibleSearchInput({
                     aria-haspopup="listbox"
                     aria-autocomplete="list"
                     role="combobox"
-                    data-oid="a.5e1q7"
+                    data-oid="pp6kowc"
                 />
 
                 <button
@@ -96,12 +96,12 @@ export function AccessibleSearchInput({
                     disabled={isLoading}
                     className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 disabled:opacity-50"
                     aria-label="Arama yap"
-                    data-oid="rd7xhzw"
+                    data-oid=":_0765h"
                 >
                     {isLoading ? (
                         <div
                             className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"
-                            data-oid="ajxy_6s"
+                            data-oid="ltlg1s1"
                         ></div>
                     ) : (
                         <svg
@@ -109,14 +109,14 @@ export function AccessibleSearchInput({
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
-                            data-oid="_frerjb"
+                            data-oid="en7nwgj"
                         >
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
                                 strokeWidth={2}
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                data-oid="pgsjvk1"
+                                data-oid="q7lw_6s"
                             />
                         </svg>
                     )}
@@ -129,7 +129,7 @@ export function AccessibleSearchInput({
                     ref={listRef}
                     role="listbox"
                     className="absolute z-10 w-full mt-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg max-h-60 overflow-auto"
-                    data-oid="mjgl_5a"
+                    data-oid="e_schic"
                 >
                     {suggestions.map((suggestion, index) => (
                         <li
@@ -146,7 +146,7 @@ export function AccessibleSearchInput({
                                 setShowSuggestions(false);
                                 setSelectedIndex(-1);
                             }}
-                            data-oid="vd6n2s8"
+                            data-oid="6271kv1"
                         >
                             {suggestion}
                         </li>
@@ -197,23 +197,23 @@ export function AccessibleModal({ isOpen, onClose, title, children }: Accessible
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-title"
-            data-oid="0ricftq"
+            data-oid="19mt8.o"
         >
             <div
                 ref={modalRef}
                 className="bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
                 tabIndex={-1}
-                data-oid="um.4f6w"
+                data-oid="p_r298r"
             >
                 <div
                     className="p-6 border-b border-gray-100 dark:border-gray-700"
-                    data-oid="n99hg:5"
+                    data-oid="qgck.w3"
                 >
-                    <div className="flex justify-between items-start" data-oid="jnu8mc6">
+                    <div className="flex justify-between items-start" data-oid="dixf:1:">
                         <h2
                             id="modal-title"
                             className="text-2xl font-bold text-gray-900 dark:text-white"
-                            data-oid="wppxggw"
+                            data-oid="8gpcf9n"
                         >
                             {title}
                         </h2>
@@ -221,28 +221,28 @@ export function AccessibleModal({ isOpen, onClose, title, children }: Accessible
                             onClick={onClose}
                             className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                             aria-label="Modalı kapat"
-                            data-oid="067jlvq"
+                            data-oid="t:3u8ag"
                         >
                             <svg
                                 className="w-6 h-6"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="toqhht5"
+                                data-oid="4g2crmy"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M6 18L18 6M6 6l12 12"
-                                    data-oid="v3.cxwf"
+                                    data-oid=":hjjzgt"
                                 />
                             </svg>
                         </button>
                     </div>
                 </div>
 
-                <div className="p-6" data-oid="-c.bjwd">
+                <div className="p-6" data-oid="jdlavg.">
                     {children}
                 </div>
             </div>
@@ -256,7 +256,7 @@ export function SkipToContent() {
         <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50"
-            data-oid="un.9ms2"
+            data-oid="ri7.d1i"
         >
             Ana içeriğe geç
         </a>
@@ -266,7 +266,7 @@ export function SkipToContent() {
 // Screen Reader Only Text
 export function ScreenReaderOnly({ children }: { children: React.ReactNode }) {
     return (
-        <span className="sr-only" data-oid="iic-9ek">
+        <span className="sr-only" data-oid="f44hc4t">
             {children}
         </span>
     );

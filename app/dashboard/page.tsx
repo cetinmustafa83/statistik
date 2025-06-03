@@ -101,11 +101,11 @@ export default function Dashboard() {
         return (
             <div
                 className="min-h-screen bg-gray-50 flex items-center justify-center"
-                data-oid="rt5ylvg"
+                data-oid="0:u:4u."
             >
                 <div
                     className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"
-                    data-oid="fsymtzw"
+                    data-oid="vynkr8h"
                 ></div>
             </div>
         );
@@ -114,45 +114,45 @@ export default function Dashboard() {
     const hasData = companies.length > 0;
 
     return (
-        <div className="min-h-screen bg-gray-50" data-oid="n5xl_ol">
+        <div className="min-h-screen bg-gray-50" data-oid="kjobclz">
             {/* Navigation */}
-            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid="v5wbj4o">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="7-5s-uh">
-                    <div className="flex justify-between items-center py-4" data-oid="ylkd.4y">
-                        <div className="flex items-center space-x-3" data-oid="micwn9t">
+            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid="o5xd0tc">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="nj7jact">
+                    <div className="flex justify-between items-center py-4" data-oid="59_2voe">
+                        <div className="flex items-center space-x-3" data-oid="pagl4a:">
                             <div
                                 className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center"
-                                data-oid="imawi61"
+                                data-oid="nyh4_09"
                             >
-                                <span className="text-white font-bold text-lg" data-oid="68a9cir">
+                                <span className="text-white font-bold text-lg" data-oid="8dbni_7">
                                     IT
                                 </span>
                             </div>
-                            <h1 className="text-2xl font-bold text-gray-900" data-oid="m7dlbnh">
+                            <h1 className="text-2xl font-bold text-gray-900" data-oid="uwgcg_3">
                                 Dashboard
                             </h1>
                         </div>
 
-                        <div className="flex items-center space-x-4" data-oid="2h0s5-q">
+                        <div className="flex items-center space-x-4" data-oid="ztz9yqi">
                             <button
                                 onClick={() => router.push('/ai-search')}
                                 className="p-2 text-gray-600 hover:text-blue-600 transition-colors"
                                 title="AI Search"
-                                data-oid="ewabb57"
+                                data-oid=".jem9n4"
                             >
                                 <svg
                                     className="w-6 h-6"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="e92dknz"
+                                    data-oid="lh0w.12"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                        data-oid="9sf_uf2"
+                                        data-oid="us2cphl"
                                     />
                                 </svg>
                             </button>
@@ -160,21 +160,21 @@ export default function Dashboard() {
                                 onClick={goToSettings}
                                 className="p-2 text-gray-600 hover:text-blue-600 transition-colors"
                                 title="Einstellungen"
-                                data-oid="01bl:kz"
+                                data-oid="ujz2u.4"
                             >
                                 <svg
                                     className="w-6 h-6"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="2sndwmp"
+                                    data-oid="uha57rf"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                        data-oid="j-29c_e"
+                                        data-oid="1go:0bj"
                                     />
 
                                     <path
@@ -182,17 +182,17 @@ export default function Dashboard() {
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                                        data-oid="feo87c."
+                                        data-oid="5zsizc1"
                                     />
                                 </svg>
                             </button>
-                            <span className="text-gray-600" data-oid="j7lu2fc">
+                            <span className="text-gray-600" data-oid="k1o6z7f">
                                 Willkommen, {userEmail}
                             </span>
                             <button
                                 onClick={handleLogout}
                                 className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
-                                data-oid="oxl0pi_"
+                                data-oid="haedb2a"
                             >
                                 Abmelden
                             </button>
@@ -202,35 +202,35 @@ export default function Dashboard() {
             </nav>
 
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid="ziq-smr">
+            <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid="dx.2nc4">
                 {/* Header */}
-                <div className="mb-8" data-oid="d-a9493">
-                    <div className="flex justify-between items-center" data-oid="mtd5xgu">
-                        <div data-oid="-a.87v7">
+                <div className="mb-8" data-oid="78x1hvw">
+                    <div className="flex justify-between items-center" data-oid="kr6rlul">
+                        <div data-oid="gfc1bw7">
                             <h2
                                 className="text-3xl font-bold text-gray-900 mb-2"
-                                data-oid="4mnq48n"
+                                data-oid="2_e:kgh"
                             >
                                 Statistik
                             </h2>
-                            <p className="text-gray-600" data-oid="l08gm9b">
+                            <p className="text-gray-600" data-oid="pxtnqd2">
                                 {hasData
                                     ? `Letzte Aktualisierung: ${lastUpdate?.toLocaleString('de-DE')} (${companies.length} Unternehmen)`
                                     : 'Keine Daten verfügbar - Bitte konfigurieren Sie zuerst die AI-Einstellungen'}
                             </p>
                             {/* Debug Info */}
-                            <p className="text-xs text-gray-400 mt-1" data-oid="uh6j1f5">
+                            <p className="text-xs text-gray-400 mt-1" data-oid="zjmdehj">
                                 Debug: DB Status - Companies: {companies.length}, Settings:{' '}
                                 {db.getAPISettings() ? 'Konfiguriert' : 'Nicht konfiguriert'}
                             </p>
                         </div>
-                        <div className="flex items-center space-x-4" data-oid="-mu-q8z">
-                            <div className="flex items-center space-x-2" data-oid="snmj.us">
+                        <div className="flex items-center space-x-4" data-oid="t3j2sva">
+                            <div className="flex items-center space-x-2" data-oid="2id1fqb">
                                 <div
                                     className={`w-3 h-3 rounded-full ${cronStatus ? 'bg-green-500' : 'bg-red-500'}`}
-                                    data-oid="6od6yc."
+                                    data-oid="lp9yzom"
                                 ></div>
-                                <span className="text-sm text-gray-600" data-oid="03lgto0">
+                                <span className="text-sm text-gray-600" data-oid="wsp95dx">
                                     Cron: {cronStatus ? 'Aktiv' : 'Inaktiv'}
                                 </span>
                             </div>
@@ -241,7 +241,7 @@ export default function Dashboard() {
                                     console.log('API settings:', db.getAPISettings());
                                 }}
                                 className="bg-gray-500 text-white px-3 py-1 rounded text-sm hover:bg-gray-600 transition-colors"
-                                data-oid="bd3j691"
+                                data-oid="fi9cq9x"
                             >
                                 Debug
                             </button>
@@ -249,13 +249,13 @@ export default function Dashboard() {
                                 onClick={handleManualQuery}
                                 disabled={isQuerying}
                                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                data-oid="w_h_778"
+                                data-oid="jrfexa_"
                             >
                                 {isQuerying ? (
-                                    <div className="flex items-center" data-oid="eijkdg5">
+                                    <div className="flex items-center" data-oid="joha4uh">
                                         <div
                                             className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
-                                            data-oid=".x51ve3"
+                                            data-oid="zwlu:9g"
                                         ></div>
                                         Laden...
                                     </div>
@@ -271,44 +271,44 @@ export default function Dashboard() {
                     /* No Data State */
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center"
-                        data-oid="mihdxxe"
+                        data-oid="er8m.kw"
                     >
                         <div
                             className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4"
-                            data-oid="4xnc1b1"
+                            data-oid="h1ua5a3"
                         >
                             <svg
                                 className="w-8 h-8 text-gray-400"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="gf6lgp9"
+                                data-oid="g5:h.jb"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                                    data-oid="apy8sg_"
+                                    data-oid="4-1ml-v"
                                 />
                             </svg>
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900 mb-2" data-oid="124bnyf">
+                        <h3 className="text-lg font-medium text-gray-900 mb-2" data-oid="9wx2vei">
                             Keine Daten verfügbar
                         </h3>
-                        <p className="text-gray-600 mb-6" data-oid="y25u.xo">
+                        <p className="text-gray-600 mb-6" data-oid="2b.l73_">
                             Um IT-Dienstleister Daten anzuzeigen, müssen Sie zuerst Ihre
                             AI-Einstellungen konfigurieren.
                         </p>
-                        <div className="space-y-3" data-oid="g6px3t5">
+                        <div className="space-y-3" data-oid="c7vv-fo">
                             <button
                                 onClick={goToSettings}
                                 className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                                data-oid="g_7u5fi"
+                                data-oid="fez8.x2"
                             >
                                 Zu den Einstellungen
                             </button>
-                            <p className="text-sm text-gray-500" data-oid="g9klga1">
+                            <p className="text-sm text-gray-500" data-oid="g-s32on">
                                 Oder klicken Sie auf "Daten aktualisieren" nachdem Sie die
                                 API-Einstellungen konfiguriert haben.
                             </p>
@@ -320,45 +320,45 @@ export default function Dashboard() {
                         {/* Revenue Chart */}
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8"
-                            data-oid="sbov708"
+                            data-oid="w.93s2o"
                         >
                             <h3
                                 className="text-xl font-semibold text-gray-900 mb-6"
-                                data-oid="5_-ux3p"
+                                data-oid="7bp4a63"
                             >
                                 Umsatzentwicklung (Milliarden €)
                             </h3>
-                            <div className="space-y-4" data-oid="80s.wbe">
+                            <div className="space-y-4" data-oid="zrglylv">
                                 {companies.slice(0, 5).map((company) => (
                                     <div
                                         key={company.rank}
                                         className="flex items-center space-x-4"
-                                        data-oid="i1kj_4i"
+                                        data-oid="oieq4w8"
                                     >
                                         <div
                                             className="w-32 text-sm font-medium text-gray-700 truncate"
-                                            data-oid="gofxdx4"
+                                            data-oid="4qee4:-"
                                         >
                                             {company.name}
                                         </div>
                                         <div
                                             className="flex-1 flex items-center space-x-2"
-                                            data-oid="xzopmdg"
+                                            data-oid="trk3fi7"
                                         >
                                             <div
                                                 className="flex-1 bg-gray-200 rounded-full h-6 relative"
-                                                data-oid="r98wcda"
+                                                data-oid="cce.iml"
                                             >
                                                 <div
                                                     className="bg-blue-500 h-6 rounded-full flex items-center justify-end pr-2"
                                                     style={{
                                                         width: `${Math.min((company.revenue2023 / 35) * 100, 100)}%`,
                                                     }}
-                                                    data-oid="m5pd0pi"
+                                                    data-oid="khj.v_q"
                                                 >
                                                     <span
                                                         className="text-xs text-white font-medium"
-                                                        data-oid="2qmztcc"
+                                                        data-oid="mm6j9dd"
                                                     >
                                                         2023: €{company.revenue2023}B
                                                     </span>
@@ -366,18 +366,18 @@ export default function Dashboard() {
                                             </div>
                                             <div
                                                 className="flex-1 bg-gray-200 rounded-full h-6 relative"
-                                                data-oid="9p-i7vm"
+                                                data-oid="4f3eqnu"
                                             >
                                                 <div
                                                     className="bg-green-500 h-6 rounded-full flex items-center justify-end pr-2"
                                                     style={{
                                                         width: `${Math.min((company.revenue2024 / 35) * 100, 100)}%`,
                                                     }}
-                                                    data-oid="yfpd8mu"
+                                                    data-oid="bx4f2my"
                                                 >
                                                     <span
                                                         className="text-xs text-white font-medium"
-                                                        data-oid="bhyurjf"
+                                                        data-oid="2jgndgm"
                                                     >
                                                         2024: €{company.revenue2024}B
                                                     </span>
@@ -385,7 +385,7 @@ export default function Dashboard() {
                                             </div>
                                             <div
                                                 className="w-16 text-sm font-medium text-green-600"
-                                                data-oid="sabh-87"
+                                                data-oid="h_flmhw"
                                             >
                                                 +
                                                 {company.revenue2023 > 0
@@ -407,59 +407,59 @@ export default function Dashboard() {
                         {/* Companies List */}
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100 mb-8"
-                            data-oid="ld8e-8p"
+                            data-oid="kh7_s07"
                         >
-                            <div className="p-6 border-b border-gray-100" data-oid="qw_afx7">
+                            <div className="p-6 border-b border-gray-100" data-oid="s7h8pis">
                                 <h3
                                     className="text-xl font-semibold text-gray-900"
-                                    data-oid="k840_1w"
+                                    data-oid="8qlvt_1"
                                 >
                                     Vollständige Rangliste
                                 </h3>
                             </div>
-                            <div className="overflow-x-auto" data-oid="159v1-3">
-                                <table className="w-full" data-oid="83gagmr">
-                                    <thead className="bg-gray-50" data-oid="bup1qw:">
-                                        <tr data-oid="i.cv3:x">
+                            <div className="overflow-x-auto" data-oid="9u_mnb3">
+                                <table className="w-full" data-oid="qtaf_:-">
+                                    <thead className="bg-gray-50" data-oid="cqud9ga">
+                                        <tr data-oid=".repuv6">
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="-csa36x"
+                                                data-oid="_-x3av_"
                                             >
                                                 Rang
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="rc.3z.4"
+                                                data-oid="r9oppnf"
                                             >
                                                 Unternehmen
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="..b25ap"
+                                                data-oid="xan4rww"
                                             >
                                                 Standort
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="s.7:.:0"
+                                                data-oid="xeff-9a"
                                             >
                                                 Spezialisierung
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="vip_a71"
+                                                data-oid="8ouew46"
                                             >
                                                 Umsatz 2024
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="m:qua1f"
+                                                data-oid="u-m9se5"
                                             >
                                                 Mitarbeiter
                                             </th>
                                             <th
                                                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                                data-oid="bq7.872"
+                                                data-oid="bucrtqc"
                                             >
                                                 Marktanteil
                                             </th>
@@ -467,25 +467,25 @@ export default function Dashboard() {
                                     </thead>
                                     <tbody
                                         className="bg-white divide-y divide-gray-200"
-                                        data-oid="zwh3iu8"
+                                        data-oid="e31ole0"
                                     >
                                         {companies.map((company) => (
                                             <tr
                                                 key={company.rank}
                                                 className="hover:bg-gray-50"
-                                                data-oid="vddu1qy"
+                                                data-oid="77ubm3o"
                                             >
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="cpwhy05"
+                                                    data-oid="-.ik_12"
                                                 >
                                                     <div
                                                         className="flex items-center"
-                                                        data-oid="frjozvf"
+                                                        data-oid="bh35zuy"
                                                     >
                                                         <div
                                                             className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-                                                            data-oid="gqkrms:"
+                                                            data-oid="smr7ahk"
                                                         >
                                                             {company.rank}
                                                         </div>
@@ -493,50 +493,50 @@ export default function Dashboard() {
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="a:c.c_e"
+                                                    data-oid="86e447i"
                                                 >
                                                     <div
                                                         className="text-sm font-medium text-gray-900"
-                                                        data-oid=":-83h5b"
+                                                        data-oid="v7eqr_2"
                                                     >
                                                         {company.name}
                                                     </div>
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="r8s.t_u"
+                                                    data-oid="6uiu2lj"
                                                 >
                                                     <div
                                                         className="text-sm text-gray-500"
-                                                        data-oid="98::hun"
+                                                        data-oid="uyhvhjz"
                                                     >
                                                         {company.location}
                                                     </div>
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="g5u9k6l"
+                                                    data-oid="7nh.r50"
                                                 >
                                                     <span
                                                         className="inline-flex px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full"
-                                                        data-oid="7mzc46i"
+                                                        data-oid="plos26z"
                                                     >
                                                         {company.specialty}
                                                     </span>
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="gm78-w2"
+                                                    data-oid="o_-8ozq"
                                                 >
                                                     <div
                                                         className="text-sm font-medium text-gray-900"
-                                                        data-oid="_ff1hhz"
+                                                        data-oid="m7u8f51"
                                                     >
                                                         €{company.revenue2024}B
                                                     </div>
                                                     <div
                                                         className="text-xs text-green-600"
-                                                        data-oid="iy.dox2"
+                                                        data-oid="fk_doq-"
                                                     >
                                                         +
                                                         {company.revenue2023 > 0
@@ -552,22 +552,22 @@ export default function Dashboard() {
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="ctul7vz"
+                                                    data-oid="0cqja_t"
                                                 >
                                                     <div
                                                         className="text-sm text-gray-900"
-                                                        data-oid="wnlg_s4"
+                                                        data-oid=":08577i"
                                                     >
                                                         {company.employees.toLocaleString()}
                                                     </div>
                                                 </td>
                                                 <td
                                                     className="px-6 py-4 whitespace-nowrap"
-                                                    data-oid="_ylw:0w"
+                                                    data-oid="xjqmfb."
                                                 >
                                                     <div
                                                         className="text-sm text-gray-900"
-                                                        data-oid="rj:2lam"
+                                                        data-oid="cbxzij."
                                                     >
                                                         {company.marketShare}%
                                                     </div>
@@ -580,18 +580,18 @@ export default function Dashboard() {
                         </div>
 
                         {/* Market Share and Growth Charts */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-oid="m2pjro7">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8" data-oid="-52o_v1">
                             <div
                                 className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                                data-oid="83jd8yy"
+                                data-oid="xfdwml3"
                             >
                                 <h3
                                     className="text-xl font-semibold text-gray-900 mb-6"
-                                    data-oid="ek4py.o"
+                                    data-oid="w-8rfm-"
                                 >
                                     Marktanteil Verteilung
                                 </h3>
-                                <div className="space-y-3" data-oid="1bqsh43">
+                                <div className="space-y-3" data-oid="vsg-w99">
                                     {companies.slice(0, 5).map((company, index) => {
                                         const colors = [
                                             'bg-blue-500',
@@ -605,25 +605,25 @@ export default function Dashboard() {
                                             <div
                                                 key={company.rank}
                                                 className="flex items-center space-x-3"
-                                                data-oid="fwy8tli"
+                                                data-oid="6yu9g6."
                                             >
                                                 <div
                                                     className={`w-4 h-4 rounded ${colors[index]}`}
-                                                    data-oid="blwd40i"
+                                                    data-oid="dtousu5"
                                                 ></div>
                                                 <div
                                                     className="flex-1 flex justify-between"
-                                                    data-oid="etni0oh"
+                                                    data-oid="s9rpaow"
                                                 >
                                                     <span
                                                         className="text-sm font-medium text-gray-700"
-                                                        data-oid="vys1i_7"
+                                                        data-oid="8oi7i6l"
                                                     >
                                                         {company.name}
                                                     </span>
                                                     <span
                                                         className="text-sm text-gray-500"
-                                                        data-oid="biu:8c0"
+                                                        data-oid="yk4_zn2"
                                                     >
                                                         {company.marketShare}%
                                                     </span>
@@ -631,24 +631,24 @@ export default function Dashboard() {
                                             </div>
                                         );
                                     })}
-                                    <div className="flex items-center space-x-3" data-oid="-vh:0i:">
+                                    <div className="flex items-center space-x-3" data-oid=":an7d0u">
                                         <div
                                             className="w-4 h-4 rounded bg-gray-400"
-                                            data-oid="-y-_abg"
+                                            data-oid="nqsyl4x"
                                         ></div>
                                         <div
                                             className="flex-1 flex justify-between"
-                                            data-oid="m2:7xey"
+                                            data-oid="khfx8nq"
                                         >
                                             <span
                                                 className="text-sm font-medium text-gray-700"
-                                                data-oid="5iwhjwb"
+                                                data-oid="-7w9a1f"
                                             >
                                                 Andere
                                             </span>
                                             <span
                                                 className="text-sm text-gray-500"
-                                                data-oid="q57i4x4"
+                                                data-oid="ng-xzj3"
                                             >
                                                 {(
                                                     100 -
@@ -669,15 +669,15 @@ export default function Dashboard() {
 
                             <div
                                 className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                                data-oid="r5.4_g0"
+                                data-oid="xru1_:k"
                             >
                                 <h3
                                     className="text-xl font-semibold text-gray-900 mb-6"
-                                    data-oid="_t1mo_4"
+                                    data-oid="coyv1re"
                                 >
                                     Wachstumstrends 2023-2024
                                 </h3>
-                                <div className="space-y-4" data-oid="1nkn1_-">
+                                <div className="space-y-4" data-oid="r.oqx:4">
                                     {companies.slice(0, 5).map((company) => {
                                         const growth =
                                             company.revenue2023 > 0
@@ -689,33 +689,33 @@ export default function Dashboard() {
                                             <div
                                                 key={company.rank}
                                                 className="flex items-center justify-between"
-                                                data-oid="3negox7"
+                                                data-oid="cfaf1r0"
                                             >
                                                 <span
                                                     className="text-sm font-medium text-gray-700"
-                                                    data-oid="c3cf:mn"
+                                                    data-oid=".pb0-5n"
                                                 >
                                                     {company.name}
                                                 </span>
                                                 <div
                                                     className="flex items-center space-x-2"
-                                                    data-oid="mh685yi"
+                                                    data-oid="wovy49o"
                                                 >
                                                     <div
                                                         className="w-20 bg-gray-200 rounded-full h-2"
-                                                        data-oid="j3qs8po"
+                                                        data-oid="52.tlll"
                                                     >
                                                         <div
                                                             className="bg-green-500 h-2 rounded-full"
                                                             style={{
                                                                 width: `${Math.min(Math.max(growth * 5, 0), 100)}%`,
                                                             }}
-                                                            data-oid="cijwv.p"
+                                                            data-oid="0iwqkra"
                                                         ></div>
                                                     </div>
                                                     <span
                                                         className="text-sm font-medium text-green-600"
-                                                        data-oid="c6uhq.d"
+                                                        data-oid="iz7m.gf"
                                                     >
                                                         +{growth.toFixed(1)}%
                                                     </span>

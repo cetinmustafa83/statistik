@@ -52,9 +52,9 @@ export function ProgressiveLoader({
     const hasMore = loadedCount < items.length;
 
     return (
-        <div className={className} data-oid="xq7bqju">
+        <div className={className} data-oid="uxfudry">
             {/* Rendered Items */}
-            <div className="space-y-4" data-oid=".8hnpyu">
+            <div className="space-y-4" data-oid="m4wwrrq">
                 {visibleItems.map((item, index) => (
                     <div
                         key={index}
@@ -63,7 +63,7 @@ export function ProgressiveLoader({
                             animationDelay: `${(index % batchSize) * 50}ms`,
                             animationFillMode: 'both',
                         }}
-                        data-oid="m3m0kn6"
+                        data-oid=".1b5gbf"
                     >
                         {renderItem(item, index)}
                     </div>
@@ -72,17 +72,17 @@ export function ProgressiveLoader({
 
             {/* Loading Indicator */}
             {hasMore && (
-                <div ref={loaderRef} className="mt-8 text-center" data-oid="gdo.-.u">
+                <div ref={loaderRef} className="mt-8 text-center" data-oid="8uqk0cd">
                     {isLoading ? (
                         <div
                             className="flex items-center justify-center space-x-2"
-                            data-oid="1eb39-n"
+                            data-oid="t91ansp"
                         >
                             <div
                                 className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"
-                                data-oid="-h5s6in"
+                                data-oid="4m-h14c"
                             ></div>
-                            <span className="text-gray-600" data-oid="tg802fp">
+                            <span className="text-gray-600" data-oid="ls0t4jm">
                                 Daha fazla yükleniyor...
                             </span>
                         </div>
@@ -90,7 +90,7 @@ export function ProgressiveLoader({
                         <button
                             onClick={loadMoreItems}
                             className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                            data-oid="jxrtm6m"
+                            data-oid="p6fivuf"
                         >
                             Daha Fazla Yükle ({items.length - loadedCount} kaldı)
                         </button>
@@ -100,23 +100,23 @@ export function ProgressiveLoader({
 
             {/* Progress Bar */}
             {items.length > batchSize && (
-                <div className="mt-4" data-oid="dbsos27">
+                <div className="mt-4" data-oid="by85olf">
                     <div
                         className="flex justify-between text-sm text-gray-600 mb-1"
-                        data-oid="4ij9y-l"
+                        data-oid="dr52ucv"
                     >
-                        <span data-oid="xo84dfd">
+                        <span data-oid="o18ztmd">
                             Yüklenen: {loadedCount} / {items.length}
                         </span>
-                        <span data-oid="p2bv455">
+                        <span data-oid="6dd.srk">
                             {Math.round((loadedCount / items.length) * 100)}%
                         </span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2" data-oid="_.h85h5">
+                    <div className="w-full bg-gray-200 rounded-full h-2" data-oid="aw-xpe2">
                         <div
                             className="bg-blue-600 h-2 rounded-full transition-all duration-300"
                             style={{ width: `${(loadedCount / items.length) * 100}%` }}
-                            data-oid="y3y9hxb"
+                            data-oid="06vabp4"
                         ></div>
                     </div>
                 </div>

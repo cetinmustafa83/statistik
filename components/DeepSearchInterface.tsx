@@ -173,34 +173,34 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
     return (
         <div
             className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6"
-            data-oid="ydkuim_"
+            data-oid="2ylozv-"
         >
-            <div className="space-y-6" data-oid="fd:_3dp">
+            <div className="space-y-6" data-oid=".zy8d1e">
                 {/* Header */}
-                <div className="flex items-center justify-between" data-oid="iq2s7u4">
-                    <div data-oid="imcuysx">
+                <div className="flex items-center justify-between" data-oid=".oqf8sj">
+                    <div data-oid="osi3i75">
                         <h2
                             className="text-2xl font-bold text-gray-900 dark:text-white"
-                            data-oid="rpfr1x1"
+                            data-oid="vox698n"
                         >
                             🔍 Deep AI Search
                         </h2>
-                        <p className="text-gray-600 dark:text-gray-300 mt-1" data-oid="k7-.dm:">
+                        <p className="text-gray-600 dark:text-gray-300 mt-1" data-oid="32eu_id">
                             Gelişmiş AI ile derin şirket analizi ve içgörüler
                         </p>
                     </div>
                     <button
                         onClick={() => setShowAdvanced(!showAdvanced)}
                         className="px-4 py-2 text-sm bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-                        data-oid="ouqln4l"
+                        data-oid="au9zb41"
                     >
                         {showAdvanced ? 'Basit Görünüm' : 'Gelişmiş Ayarlar'}
                     </button>
                 </div>
 
                 {/* Main Search Input */}
-                <div className="space-y-4" data-oid="y-a1o99">
-                    <div className="relative" data-oid="yjy.lsy">
+                <div className="space-y-4" data-oid="g0qgy:x">
+                    <div className="relative" data-oid="4_a86kr">
                         <textarea
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
@@ -208,19 +208,19 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                             placeholder="Derin arama sorgunuzu girin... (örn: 'cloud computing alanında hızla büyüyen Almanya merkezli şirketler')"
                             className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-none"
                             rows={3}
-                            data-oid="ymh.ne:"
+                            data-oid="wbst06."
                         />
 
                         <button
                             onClick={handleDeepSearch}
                             disabled={isSearching || !query.trim()}
                             className="absolute right-2 bottom-2 p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                            data-oid="rxky_45"
+                            data-oid="u7qld_-"
                         >
                             {isSearching ? (
                                 <div
                                     className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"
-                                    data-oid="sm8kne:"
+                                    data-oid="n3ev5n4"
                                 ></div>
                             ) : (
                                 <svg
@@ -228,14 +228,14 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="zjkuats"
+                                    data-oid="nnozjnd"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                        data-oid="b.hgn3c"
+                                        data-oid="643uz0j"
                                     />
                                 </svg>
                             )}
@@ -243,7 +243,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                     </div>
 
                     {/* Quick Search Options */}
-                    <div className="flex flex-wrap gap-2" data-oid="o_arjnh">
+                    <div className="flex flex-wrap gap-2" data-oid="spwilo9">
                         {[
                             'Top IT şirketleri',
                             'Hızla büyüyen startuplar',
@@ -256,7 +256,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                 key={suggestion}
                                 onClick={() => setQuery(suggestion)}
                                 className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-                                data-oid="p8jo1be"
+                                data-oid="2kznkop"
                             >
                                 {suggestion}
                             </button>
@@ -268,14 +268,14 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                 {showAdvanced && (
                     <div
                         className="space-y-6 border-t border-gray-200 dark:border-gray-600 pt-6"
-                        data-oid="q8883qh"
+                        data-oid="2ow0swh"
                     >
                         {/* Search Configuration */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-oid="6nfjdeb">
-                            <div data-oid=".yastoh">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-oid="wp6b:y8">
+                            <div data-oid="l9iy3g6">
                                 <label
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                    data-oid="rtw2alg"
+                                    data-oid="h3_fycj"
                                 >
                                     Arama Türü
                                 </label>
@@ -283,33 +283,33 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                     value={searchType}
                                     onChange={(e) => setSearchType(e.target.value as any)}
                                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                                    data-oid="yb.huca"
+                                    data-oid="0na6eil"
                                 >
-                                    <option value="hybrid" data-oid="u2tvhys">
+                                    <option value="hybrid" data-oid="39xg6ft">
                                         Hibrit Arama
                                     </option>
-                                    <option value="semantic" data-oid="lkdg41m">
+                                    <option value="semantic" data-oid="3qu5uq2">
                                         Semantik Arama
                                     </option>
-                                    <option value="keyword" data-oid="zehgqku">
+                                    <option value="keyword" data-oid="01haguk">
                                         Anahtar Kelime
                                     </option>
-                                    <option value="analytical" data-oid="pk19r_c">
+                                    <option value="analytical" data-oid="s3m47-p">
                                         Analitik Arama
                                     </option>
                                 </select>
                                 <p
                                     className="text-xs text-gray-500 dark:text-gray-400 mt-1"
-                                    data-oid="7l_ydt0"
+                                    data-oid="8q1en_."
                                 >
                                     {getSearchTypeDescription(searchType)}
                                 </p>
                             </div>
 
-                            <div data-oid="cay_cs.">
+                            <div data-oid="cjp2j_i">
                                 <label
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                    data-oid="6lxdabs"
+                                    data-oid="le:c34r"
                                 >
                                     Arama Derinliği
                                 </label>
@@ -317,24 +317,24 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                     value={searchDepth}
                                     onChange={(e) => setSearchDepth(e.target.value as any)}
                                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                                    data-oid="9-ywimb"
+                                    data-oid="9apxo:8"
                                 >
-                                    <option value="surface" data-oid="jrqicb1">
+                                    <option value="surface" data-oid="cjy52y8">
                                         Yüzeysel
                                     </option>
-                                    <option value="medium" data-oid="ttv:wyc">
+                                    <option value="medium" data-oid="mhj:8yo">
                                         Orta
                                     </option>
-                                    <option value="deep" data-oid="x1u_:7:">
+                                    <option value="deep" data-oid="4x6jex5">
                                         Derin
                                     </option>
-                                    <option value="comprehensive" data-oid="9:-wdyh">
+                                    <option value="comprehensive" data-oid="730x9-x">
                                         Kapsamlı
                                     </option>
                                 </select>
                                 <p
                                     className="text-xs text-gray-500 dark:text-gray-400 mt-1"
-                                    data-oid="a.m4gau"
+                                    data-oid="ruk60t4"
                                 >
                                     {getDepthDescription(searchDepth)}
                                 </p>
@@ -342,50 +342,50 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                         </div>
 
                         {/* Filters */}
-                        <div className="space-y-4" data-oid="q:p3:l6">
-                            <div className="flex items-center justify-between" data-oid="1ucaz:x">
+                        <div className="space-y-4" data-oid=".ls4du-">
+                            <div className="flex items-center justify-between" data-oid="5heu7os">
                                 <h3
                                     className="text-lg font-medium text-gray-900 dark:text-white"
-                                    data-oid="vi38f-i"
+                                    data-oid="pvq.0_e"
                                 >
                                     Filtreler
                                 </h3>
                                 <button
                                     onClick={clearAllFilters}
                                     className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-                                    data-oid="qy6lila"
+                                    data-oid="cxdumg4"
                                 >
                                     Tümünü Temizle
                                 </button>
                             </div>
 
                             {/* Location Filters */}
-                            <div data-oid="ff4u0t:">
+                            <div data-oid=".i_w0ka">
                                 <label
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                    data-oid="wpb:t4x"
+                                    data-oid="f.u43er"
                                 >
                                     Lokasyon
                                 </label>
-                                <div className="flex flex-wrap gap-2 mb-2" data-oid="whjqafh">
+                                <div className="flex flex-wrap gap-2 mb-2" data-oid="n2.ap5e">
                                     {filters.location.map((location) => (
                                         <span
                                             key={location}
                                             className="inline-flex items-center px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
-                                            data-oid="1czo-4z"
+                                            data-oid="5yl9av4"
                                         >
                                             {location}
                                             <button
                                                 onClick={() => removeLocationFilter(location)}
                                                 className="ml-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
-                                                data-oid="9dj3qfi"
+                                                data-oid="36an5lw"
                                             >
                                                 ×
                                             </button>
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex flex-wrap gap-2" data-oid="k_gy6ti">
+                                <div className="flex flex-wrap gap-2" data-oid="dhpbd66">
                                     {[
                                         'Berlin',
                                         'München',
@@ -399,7 +399,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                             onClick={() => addLocationFilter(city)}
                                             disabled={filters.location.includes(city)}
                                             className="px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
-                                            data-oid="q4aiiyv"
+                                            data-oid="z5o8.u1"
                                         >
                                             {city}
                                         </button>
@@ -408,32 +408,32 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                             </div>
 
                             {/* Specialty Filters */}
-                            <div data-oid="mhi1tp3">
+                            <div data-oid="k45h09w">
                                 <label
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                    data-oid="kf1nl5a"
+                                    data-oid="7:yl7u8"
                                 >
                                     Uzmanlık Alanı
                                 </label>
-                                <div className="flex flex-wrap gap-2 mb-2" data-oid="1.q9_n1">
+                                <div className="flex flex-wrap gap-2 mb-2" data-oid="ml9zpp6">
                                     {filters.specialty.map((specialty) => (
                                         <span
                                             key={specialty}
                                             className="inline-flex items-center px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm"
-                                            data-oid="j.k9z-p"
+                                            data-oid="ad.k2.l"
                                         >
                                             {specialty}
                                             <button
                                                 onClick={() => removeSpecialtyFilter(specialty)}
                                                 className="ml-2 text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-200"
-                                                data-oid="y2.2vrn"
+                                                data-oid="azg3n0j"
                                             >
                                                 ×
                                             </button>
                                         </span>
                                     ))}
                                 </div>
-                                <div className="flex flex-wrap gap-2" data-oid="aa8d5aw">
+                                <div className="flex flex-wrap gap-2" data-oid="d.jqoef">
                                     {[
                                         'Cloud Computing',
                                         'AI/ML',
@@ -447,7 +447,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                             onClick={() => addSpecialtyFilter(spec)}
                                             disabled={filters.specialty.includes(spec)}
                                             className="px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
-                                            data-oid="hosnty0"
+                                            data-oid="xd588qb"
                                         >
                                             {spec}
                                         </button>
@@ -458,17 +458,17 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                             {/* Range Filters */}
                             <div
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                                data-oid="7nb4u96"
+                                data-oid="1bhv-ls"
                             >
-                                <div data-oid="ua:t8hn">
+                                <div data-oid="z1v9f78">
                                     <label
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                        data-oid="qhr4n0h"
+                                        data-oid="1v1i0g:"
                                     >
                                         Gelir Aralığı (€{filters.revenueRange[0]}B - €
                                         {filters.revenueRange[1]}B)
                                     </label>
-                                    <div className="flex space-x-2" data-oid=":_56-d1">
+                                    <div className="flex space-x-2" data-oid="_:zt_ak">
                                         <input
                                             type="range"
                                             min="0"
@@ -484,7 +484,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                                 }))
                                             }
                                             className="flex-1"
-                                            data-oid="5yl8a.w"
+                                            data-oid="s3_kbw2"
                                         />
 
                                         <input
@@ -502,20 +502,20 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                                 }))
                                             }
                                             className="flex-1"
-                                            data-oid="cy-87nw"
+                                            data-oid="lloirf5"
                                         />
                                     </div>
                                 </div>
 
-                                <div data-oid="8tx29t5">
+                                <div data-oid="4:ss1ju">
                                     <label
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                                        data-oid="yrbb9ig"
+                                        data-oid="kuitmcn"
                                     >
                                         Çalışan Sayısı ({filters.employeeRange[0].toLocaleString()}{' '}
                                         - {filters.employeeRange[1].toLocaleString()})
                                     </label>
-                                    <div className="flex space-x-2" data-oid="04nxc84">
+                                    <div className="flex space-x-2" data-oid="-3-h150">
                                         <input
                                             type="range"
                                             min="0"
@@ -532,7 +532,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                                 }))
                                             }
                                             className="flex-1"
-                                            data-oid="3dbi.st"
+                                            data-oid="tcmy29-"
                                         />
 
                                         <input
@@ -551,7 +551,7 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                                                 }))
                                             }
                                             className="flex-1"
-                                            data-oid="y.m9-a4"
+                                            data-oid="-vhw8.d"
                                         />
                                     </div>
                                 </div>
@@ -564,23 +564,23 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                 {isSearching && (
                     <div
                         className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4"
-                        data-oid="kbvqg21"
+                        data-oid="xab0lb5"
                     >
-                        <div className="flex items-center space-x-3" data-oid="l2bgspn">
+                        <div className="flex items-center space-x-3" data-oid="i.r-yq3">
                             <div
                                 className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"
-                                data-oid="id9puh0"
+                                data-oid="8nd_d89"
                             ></div>
-                            <div data-oid="oegabak">
+                            <div data-oid="0_eaox3">
                                 <p
                                     className="text-blue-800 dark:text-blue-200 font-medium"
-                                    data-oid="s5dingf"
+                                    data-oid="215fif3"
                                 >
                                     Derin arama işlemi devam ediyor...
                                 </p>
                                 <p
                                     className="text-blue-600 dark:text-blue-300 text-sm"
-                                    data-oid="b1l1iog"
+                                    data-oid="7uqbzoi"
                                 >
                                     AI modelleri analiz yapıyor ve içgörüler oluşturuyor
                                 </p>
@@ -593,61 +593,61 @@ export function DeepSearchInterface({ onResultsChange }: DeepSearchInterfaceProp
                 {results && (
                     <div
                         className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-4"
-                        data-oid="iyo5_04"
+                        data-oid="l1o:9nd"
                     >
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4" data-oid="p..a3:y">
-                            <div className="text-center" data-oid="u5w4q-v">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4" data-oid="ph57ppi">
+                            <div className="text-center" data-oid="vjffvaw">
                                 <div
                                     className="text-2xl font-bold text-blue-600 dark:text-blue-400"
-                                    data-oid="uilzqh0"
+                                    data-oid="jjyx__9"
                                 >
                                     {results.companies.length}
                                 </div>
                                 <div
                                     className="text-sm text-gray-600 dark:text-gray-300"
-                                    data-oid="5ut5-3h"
+                                    data-oid="jtnxiux"
                                 >
                                     Şirket Bulundu
                                 </div>
                             </div>
-                            <div className="text-center" data-oid="p8-_3do">
+                            <div className="text-center" data-oid="udrlqga">
                                 <div
                                     className="text-2xl font-bold text-green-600 dark:text-green-400"
-                                    data-oid="08au-z3"
+                                    data-oid="fy3zwoe"
                                 >
                                     {results.insights.length}
                                 </div>
                                 <div
                                     className="text-sm text-gray-600 dark:text-gray-300"
-                                    data-oid="lczde4p"
+                                    data-oid="z4ed994"
                                 >
                                     İçgörü
                                 </div>
                             </div>
-                            <div className="text-center" data-oid="gnqv_pz">
+                            <div className="text-center" data-oid="ab:gnwu">
                                 <div
                                     className="text-2xl font-bold text-purple-600 dark:text-purple-400"
-                                    data-oid="famxrwl"
+                                    data-oid="0iq0idr"
                                 >
                                     {Math.round(results.confidence * 100)}%
                                 </div>
                                 <div
                                     className="text-sm text-gray-600 dark:text-gray-300"
-                                    data-oid="qm11t_5"
+                                    data-oid="8f7yr41"
                                 >
                                     Güven Skoru
                                 </div>
                             </div>
-                            <div className="text-center" data-oid="7.5yzqi">
+                            <div className="text-center" data-oid="g5ydh3k">
                                 <div
                                     className="text-2xl font-bold text-orange-600 dark:text-orange-400"
-                                    data-oid="xab35ur"
+                                    data-oid="1lxv_9j"
                                 >
                                     {results.processingTime}ms
                                 </div>
                                 <div
                                     className="text-sm text-gray-600 dark:text-gray-300"
-                                    data-oid="kto45hl"
+                                    data-oid="p9n0gx3"
                                 >
                                     İşlem Süresi
                                 </div>
