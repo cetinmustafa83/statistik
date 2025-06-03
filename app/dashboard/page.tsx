@@ -172,7 +172,7 @@ export default function Dashboard() {
                                 className="text-3xl font-bold text-gray-900 mb-2"
                                 data-oid="t_oc3bw"
                             >
-                                Top 10 IT-Dienstleister Deutschland 📊
+                                Statistik
                             </h2>
                             <p className="text-gray-600" data-oid=".gspcfm">
                                 {hasData
