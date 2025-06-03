@@ -16,9 +16,23 @@ interface APISettings {
     id?: number;
     provider: 'openai' | 'openrouter' | 'deepseek';
     apiKey: string;
+    model?: string;
     prompt: string;
     lastUsed: Date;
 }
+
+interface AIModel {
+    id: string;
+    name: string;
+    description?: string;
+    pricing?: {
+        prompt: number;
+        completion: number;
+    };
+    context_length?: number;
+    free?: boolean;
+}
+=======
 
 interface QueryLog {
     id?: number;
@@ -93,7 +107,7 @@ class DatabaseManager {
     saveAPISettings(settings: Omit<APISettings, 'id' | 'lastUsed'>) {
         if (!this.isClient) return;
         try {
-            console.log('Saving API settings:', settings.provider);
+            console.log('Saving API settings:', settings.provider, settings.model);
             const settingsWithTimestamp = {
                 ...settings,
                 lastUsed: new Date(),
@@ -156,4 +170,4 @@ class DatabaseManager {
 }
 
 export const db = new DatabaseManager();
-export type { ITCompany, APISettings, QueryLog };
+export type { ITCompany, APISettings, QueryLog, AIModel };

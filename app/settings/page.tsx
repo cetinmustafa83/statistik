@@ -2,17 +2,24 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { aiService } from '../../lib/aiService';
+import { AIModel } from '../../lib/database';
+import { useToast } from '../../lib/toast';
 
 export default function Settings() {
     const [userEmail, setUserEmail] = useState('');
     const [isLoading, setIsLoading] = useState(true);
     const [apiProvider, setApiProvider] = useState('openai');
     const [apiKey, setApiKey] = useState('');
+    const [selectedModel, setSelectedModel] = useState('');
+    const [availableModels, setAvailableModels] = useState<AIModel[]>([]);
+    const [isLoadingModels, setIsLoadingModels] = useState(false);
     const [prompt, setPrompt] = useState(
         'Analysiere die Top 10 IT-Dienstleister in Deutschland basierend auf Marktanteil, Kundenzufriedenheit und technischer Expertise.',
     );
     const [isSaving, setIsSaving] = useState(false);
     const router = useRouter();
+    const { addToast } = useToast();
 
     useEffect(() => {
         // Check if user is logged in
@@ -29,10 +36,16 @@ export default function Settings() {
         // Load saved settings
         const savedProvider = localStorage.getItem('apiProvider');
         const savedApiKey = localStorage.getItem('apiKey');
+        const savedModel = localStorage.getItem('selectedModel');
         const savedPrompt = localStorage.getItem('customPrompt');
 
-        if (savedProvider) setApiProvider(savedProvider);
+        if (savedProvider) {
+            setApiProvider(savedProvider);
+            // Load models for the saved provider
+            loadModelsForProvider(savedProvider, savedApiKey);
+        }
         if (savedApiKey) setApiKey(savedApiKey);
+        if (savedModel) setSelectedModel(savedModel);
         if (savedPrompt) setPrompt(savedPrompt);
 
         setIsLoading(false);
@@ -44,17 +57,74 @@ export default function Settings() {
         router.push('/');
     };
 
+    const loadModelsForProvider = async (provider: string, key?: string) => {
+        setIsLoadingModels(true);
+        try {
+            const models = await aiService.getModelsForProvider(provider, key);
+            setAvailableModels(models);
+
+            // Auto-select first model if none selected
+            if (models.length > 0 && !selectedModel) {
+                setSelectedModel(models[0].id);
+            }
+        } catch (error) {
+            console.error('Error loading models:', error);
+            addToast({
+                type: 'error',
+                title: 'Fehler beim Laden der Modelle',
+                message:
+                    'Modelle konnten nicht geladen werden. Bitte überprüfen Sie Ihren API-Schlüssel.',
+            });
+        } finally {
+            setIsLoadingModels(false);
+        }
+    };
+
+    const handleProviderChange = (provider: string) => {
+        setApiProvider(provider);
+        setSelectedModel('');
+        setAvailableModels([]);
+
+        // Load models for new provider
+        if (provider !== 'openrouter' || apiKey) {
+            loadModelsForProvider(provider, apiKey);
+        }
+    };
+
+    const handleApiKeyChange = (key: string) => {
+        setApiKey(key);
+
+        // If OpenRouter and key is provided, fetch models
+        if (apiProvider === 'openrouter' && key.trim()) {
+            loadModelsForProvider(apiProvider, key);
+        }
+    };
+
     const handleSaveSettings = () => {
+        if (!selectedModel && availableModels.length > 0) {
+            addToast({
+                type: 'warning',
+                title: 'Modell auswählen',
+                message: 'Bitte wählen Sie ein AI-Modell aus.',
+            });
+            return;
+        }
+
         setIsSaving(true);
 
         // Save settings to localStorage
         localStorage.setItem('apiProvider', apiProvider);
         localStorage.setItem('apiKey', apiKey);
+        localStorage.setItem('selectedModel', selectedModel);
         localStorage.setItem('customPrompt', prompt);
 
         setTimeout(() => {
             setIsSaving(false);
-            alert('Einstellungen erfolgreich gespeichert!');
+            addToast({
+                type: 'success',
+                title: 'Einstellungen gespeichert',
+                message: 'Ihre AI-Einstellungen wurden erfolgreich gespeichert!',
+            });
         }, 1000);
     };
 
@@ -140,7 +210,7 @@ export default function Settings() {
                             </label>
                             <select
                                 value={apiProvider}
-                                onChange={(e) => setApiProvider(e.target.value)}
+                                onChange={(e) => handleProviderChange(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 data-oid=":j:1ifm"
                             >
@@ -148,7 +218,7 @@ export default function Settings() {
                                     OpenAI
                                 </option>
                                 <option value="openrouter" data-oid="h3mvbbt">
-                                    OpenRouter
+                                    OpenRouter (Kostenlose Modelle)
                                 </option>
                                 <option value="deepseek" data-oid="pwdhl3w">
                                     DeepSeek
@@ -167,7 +237,7 @@ export default function Settings() {
                             <input
                                 type="password"
                                 value={apiKey}
-                                onChange={(e) => setApiKey(e.target.value)}
+                                onChange={(e) => handleApiKeyChange(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 placeholder="Geben Sie Ihren API-Schlüssel ein"
                                 data-oid="9gsms9z"
@@ -175,6 +245,111 @@ export default function Settings() {
 
                             <p className="text-sm text-gray-500 mt-1" data-oid="t-woc0l">
                                 Ihr API-Schlüssel wird sicher lokal gespeichert
+                                {apiProvider === 'openrouter' &&
+                                    ' • Modelle werden automatisch geladen'}
+                            </p>
+                        </div>
+
+                        {/* Model Selection */}
+                        <div data-oid="model-selection">
+                            <label
+                                className="block text-sm font-medium text-gray-700 mb-2"
+                                data-oid="model-label"
+                            >
+                                AI-Modell
+                            </label>
+
+                            {isLoadingModels ? (
+                                <div
+                                    className="flex items-center justify-center py-8 border border-gray-300 rounded-lg"
+                                    data-oid="zd2qmv0"
+                                >
+                                    <div
+                                        className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mr-3"
+                                        data-oid="qkbc1l6"
+                                    ></div>
+                                    <span className="text-gray-600" data-oid="tg:zppe">
+                                        Modelle werden geladen...
+                                    </span>
+                                </div>
+                            ) : availableModels.length > 0 ? (
+                                <select
+                                    value={selectedModel}
+                                    onChange={(e) => setSelectedModel(e.target.value)}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                                    data-oid="model-select"
+                                >
+                                    <option value="" data-oid="tz2hh9t">
+                                        Modell auswählen
+                                    </option>
+                                    {availableModels.map((model) => (
+                                        <option key={model.id} value={model.id} data-oid="suyudql">
+                                            {model.name}
+                                            {model.free && ' (Kostenlos)'}
+                                        </option>
+                                    ))}
+                                </select>
+                            ) : (
+                                <div
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-500"
+                                    data-oid="-vsj1xv"
+                                >
+                                    {apiProvider === 'openrouter' && !apiKey
+                                        ? 'API-Schlüssel eingeben um Modelle zu laden'
+                                        : 'Keine Modelle verfügbar'}
+                                </div>
+                            )}
+
+                            {selectedModel && availableModels.length > 0 && (
+                                <div
+                                    className="mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg"
+                                    data-oid="0-qqhx3"
+                                >
+                                    {(() => {
+                                        const model = availableModels.find(
+                                            (m) => m.id === selectedModel,
+                                        );
+                                        return model ? (
+                                            <div
+                                                className="text-sm text-blue-700"
+                                                data-oid="2d8j_75"
+                                            >
+                                                <p className="font-medium" data-oid="76_.qp-">
+                                                    {model.name}
+                                                </p>
+                                                {model.description && (
+                                                    <p className="mt-1" data-oid="i05xdnp">
+                                                        {model.description}
+                                                    </p>
+                                                )}
+                                                {model.free && (
+                                                    <p
+                                                        className="mt-1 text-green-600 font-medium"
+                                                        data-oid="cz4whmz"
+                                                    >
+                                                        ✓ Kostenloses Modell
+                                                    </p>
+                                                )}
+                                                {model.context_length && (
+                                                    <p
+                                                        className="mt-1 text-gray-600"
+                                                        data-oid="0gv8.nd"
+                                                    >
+                                                        Kontext:{' '}
+                                                        {model.context_length.toLocaleString()}{' '}
+                                                        Token
+                                                    </p>
+                                                )}
+                                            </div>
+                                        ) : null;
+                                    })()}
+                                </div>
+                            )}
+
+                            <p className="text-sm text-gray-500 mt-1" data-oid="model-help">
+                                {apiProvider === 'openrouter'
+                                    ? 'Nur kostenlose Modelle werden angezeigt'
+                                    : 'Wählen Sie das gewünschte AI-Modell für die Analyse'}
                             </p>
                         </div>
 
@@ -221,10 +396,13 @@ export default function Settings() {
                                 {apiProvider === 'openrouter' && (
                                     <>
                                         <p data-oid="20g6bn5">
-                                            • Zugang zu verschiedenen AI-Modellen
+                                            • Zugang zu kostenlosen AI-Modellen
                                         </p>
-                                        <p data-oid=":93b2t:">• Flexible Preisgestaltung</p>
+                                        <p data-oid=":93b2t:">• Llama, Mistral, Qwen und andere</p>
                                         <p data-oid="-e14voo">• API-Schlüssel von openrouter.ai</p>
+                                        <p data-oid="free-models">
+                                            • Automatische Erkennung kostenloser Modelle
+                                        </p>
                                     </>
                                 )}
                                 {apiProvider === 'deepseek' && (
