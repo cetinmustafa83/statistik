@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { db, ITCompany } from '../../lib/database';
 import { cronService } from '../../lib/cronService';
+import { useToast } from '../../lib/toast';
+import { toastMessages } from '../../lib/toastHelpers';
 
 export default function Dashboard() {
     const [userEmail, setUserEmail] = useState('');
@@ -13,6 +15,7 @@ export default function Dashboard() {
     const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
     const [cronStatus, setCronStatus] = useState(false);
     const router = useRouter();
+    const { addToast } = useToast();
 
     useEffect(() => {
         // Check if user is logged in
@@ -47,9 +50,16 @@ export default function Dashboard() {
             if (companiesData.length > 0) {
                 setLastUpdate(companiesData[0].lastUpdated);
             }
+
+            // Check if API settings are configured
+            const apiSettings = db.getAPISettings();
+            if (!apiSettings) {
+                addToast(toastMessages.apiSettingsMissing);
+            }
         } catch (error) {
             console.error('Error loading data:', error);
             setCompanies([]);
+            addToast(toastMessages.dataLoadError);
         }
     };
 
@@ -65,17 +75,24 @@ export default function Dashboard() {
     };
 
     const handleManualQuery = async () => {
+        // Check if API settings are configured before querying
+        const apiSettings = db.getAPISettings();
+        if (!apiSettings) {
+            addToast(toastMessages.apiSettingsMissing);
+            return;
+        }
+
         setIsQuerying(true);
         try {
             const result = await cronService.runManualQuery();
             if (result.success) {
                 loadData();
-                alert('Daten erfolgreich aktualisiert!');
+                addToast(toastMessages.dataUpdated);
             } else {
-                alert(`Fehler beim Abrufen der Daten: ${result.error}`);
+                addToast(toastMessages.queryError(result.error));
             }
         } catch (error) {
-            alert('Unerwarteter Fehler beim Abrufen der Daten');
+            addToast(toastMessages.unexpectedError);
         }
         setIsQuerying(false);
     };
@@ -660,40 +677,6 @@ export default function Dashboard() {
                                                 </span>
                                                 <div
                                                     className="flex items-center space-x-2"
-                                                    data-oid="4rfaj5f"
-                                                >
-                                                    <div
-                                                        className="w-20 bg-gray-200 rounded-full h-2"
-                                                        data-oid="k6a0j.z"
-                                                    >
-                                                        <div
-                                                            className="bg-green-500 h-2 rounded-full"
-                                                            style={{
-                                                                width: `${Math.min(Math.max(growth * 5, 0), 100)}%`,
-                                                            }}
-                                                            data-oid="ygsqg:r"
-                                                        ></div>
-                                                    </div>
-                                                    <span
-                                                        className="text-sm font-medium text-green-600"
-                                                        data-oid="0mhg41w"
-                                                    >
-                                                        +{growth.toFixed(1)}%
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </div>
-                        </div>
-                    </>
-                )}
-            </main>
-        </div>
-    );
-}
- items-center space-x-2"
                                                     data-oid="4rfaj5f"
                                                 >
                                                     <div
