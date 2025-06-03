@@ -43,10 +43,10 @@ export default function LoginPage() {
                         </div>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-2" data-oid="1-8wh3q">
-                        Giriş Yap
+                        Anmelden
                     </h2>
                     <p className="text-gray-600" data-oid="gs5288b">
-                        Dashboard'a erişmek için giriş yapın
+                        Melden Sie sich an, um auf das Dashboard zuzugreifen
                     </p>
                 </div>
 
@@ -58,7 +58,7 @@ export default function LoginPage() {
                                 className="block text-sm font-medium text-gray-700 mb-2"
                                 data-oid="f16xba9"
                             >
-                                E-posta
+                                E-Mail
                             </label>
                             <input
                                 id="email"
@@ -67,7 +67,7 @@ export default function LoginPage() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                placeholder="ornek@email.com"
+                                placeholder="beispiel@email.com"
                                 data-oid="k0lt-8:"
                             />
                         </div>
@@ -78,7 +78,7 @@ export default function LoginPage() {
                                 className="block text-sm font-medium text-gray-700 mb-2"
                                 data-oid="a9rnoic"
                             >
-                                Şifre
+                                Passwort
                             </label>
                             <input
                                 id="password"
@@ -106,7 +106,7 @@ export default function LoginPage() {
                                     className="ml-2 block text-sm text-gray-700"
                                     data-oid="xdoddav"
                                 >
-                                    Beni hatırla
+                                    Angemeldet bleiben
                                 </label>
                             </div>
                             <a
@@ -114,7 +114,7 @@ export default function LoginPage() {
                                 className="text-sm text-blue-600 hover:text-blue-500"
                                 data-oid="jgk1d4."
                             >
-                                Şifremi unuttum
+                                Passwort vergessen
                             </a>
                         </div>
 
@@ -133,23 +133,23 @@ export default function LoginPage() {
                                         className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"
                                         data-oid="uzxlkia"
                                     ></div>
-                                    Giriş yapılıyor...
+                                    Anmeldung läuft...
                                 </div>
                             ) : (
-                                'Giriş Yap'
+                                'Anmelden'
                             )}
                         </button>
                     </form>
 
                     <div className="mt-6 text-center" data-oid="oz:an7t">
                         <p className="text-sm text-gray-600" data-oid="2:foj3j">
-                            Hesabınız yok mu?{' '}
+                            Noch kein Konto?{' '}
                             <a
                                 href="#"
                                 className="text-blue-600 hover:text-blue-500 font-medium"
                                 data-oid="vi93dkn"
                             >
-                                Kayıt ol
+                                Registrieren
                             </a>
                         </p>
                     </div>
@@ -157,7 +157,7 @@ export default function LoginPage() {
 
                 <div className="text-center text-sm text-gray-500" data-oid="m9kl_rl">
                     <p data-oid="qvcd9oc">
-                        Demo için herhangi bir e-posta ve şifre kullanabilirsiniz
+                        Für die Demo können Sie beliebige E-Mail und Passwort verwenden
                     </p>
                 </div>
             </div>
