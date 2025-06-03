@@ -13,13 +13,15 @@ export default function LoginPage() {
         e.preventDefault();
         setIsLoading(true);
 
-        // Simulate login process
+        // Check for admin credentials
         setTimeout(() => {
-            if (email && password) {
+            if (email === 'admin' && password === 'admin') {
                 // Store login state in localStorage
                 localStorage.setItem('isLoggedIn', 'true');
                 localStorage.setItem('userEmail', email);
                 router.push('/dashboard');
+            } else {
+                alert('Ungültige Anmeldedaten! Bitte verwenden Sie: admin / admin');
             }
             setIsLoading(false);
         }, 1000);
@@ -58,16 +60,16 @@ export default function LoginPage() {
                                 className="block text-sm font-medium text-gray-700 mb-2"
                                 data-oid="f16xba9"
                             >
-                                E-Mail
+                                Benutzername
                             </label>
                             <input
                                 id="email"
-                                type="email"
+                                type="text"
                                 required
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                placeholder="beispiel@email.com"
+                                placeholder="admin"
                                 data-oid="k0lt-8:"
                             />
                         </div>
@@ -87,7 +89,7 @@ export default function LoginPage() {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                placeholder="••••••••"
+                                placeholder="admin"
                                 data-oid="2544i3u"
                             />
                         </div>
@@ -157,7 +159,8 @@ export default function LoginPage() {
 
                 <div className="text-center text-sm text-gray-500" data-oid="m9kl_rl">
                     <p data-oid="qvcd9oc">
-                        Für die Demo können Sie beliebige E-Mail und Passwort verwenden
+                        Verwenden Sie: <strong data-oid="vsifhoa">admin</strong> /{' '}
+                        <strong data-oid=".eerurr">admin</strong> für die Anmeldung
                     </p>
                 </div>
             </div>
