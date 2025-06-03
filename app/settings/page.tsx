@@ -204,51 +204,51 @@ export default function Settings() {
         return (
             <div
                 className="min-h-screen bg-gray-50 flex items-center justify-center"
-                data-oid="ncmnw43"
+                data-oid="ykl452:"
             >
                 <div
                     className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"
-                    data-oid="nnlslpd"
+                    data-oid="wwj7m8_"
                 ></div>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-gray-50" data-oid="rzbd-s0">
+        <div className="min-h-screen bg-gray-50" data-oid="-6ykkt7">
             {/* Navigation */}
-            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid=".ccltqp">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="yqdv-l5">
-                    <div className="flex justify-between items-center py-4" data-oid="3zi.:.4">
-                        <div className="flex items-center space-x-3" data-oid="dua8e50">
+            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid="mb2i0ro">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="im7l9lq">
+                    <div className="flex justify-between items-center py-4" data-oid="qw:guxa">
+                        <div className="flex items-center space-x-3" data-oid="zvaxroz">
                             <div
                                 className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center"
-                                data-oid="7woqtkd"
+                                data-oid="07khttk"
                             >
-                                <span className="text-white font-bold text-lg" data-oid="os.k:nv">
+                                <span className="text-white font-bold text-lg" data-oid="j6x0zvh">
                                     IT
                                 </span>
                             </div>
-                            <h1 className="text-2xl font-bold text-gray-900" data-oid="ags082s">
+                            <h1 className="text-2xl font-bold text-gray-900" data-oid="u9r3a61">
                                 Einstellungen
                             </h1>
                         </div>
 
-                        <div className="flex items-center space-x-4" data-oid="vgo4ipa">
+                        <div className="flex items-center space-x-4" data-oid="w_iuc9y">
                             <button
                                 onClick={goToDashboard}
                                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                                data-oid="is4-x_4"
+                                data-oid="hd8y_.6"
                             >
                                 Dashboard
                             </button>
-                            <span className="text-gray-600" data-oid="k24iac4">
+                            <span className="text-gray-600" data-oid="jhgwh85">
                                 Willkommen, {userEmail}
                             </span>
                             <button
                                 onClick={handleLogout}
                                 className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
-                                data-oid="g2okwvp"
+                                data-oid="z4ihl04"
                             >
                                 Abmelden
                             </button>
@@ -258,21 +258,21 @@ export default function Settings() {
             </nav>
 
             {/* Main Content */}
-            <main className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid="aqridep">
+            <main className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid="pbs2e.z">
                 <div
                     className="bg-white rounded-xl shadow-sm border border-gray-100 p-8"
-                    data-oid="0e3gsn_"
+                    data-oid="26y2x20"
                 >
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6" data-oid="ryf04my">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6" data-oid="xlffk4p">
                         AI-Einstellungen
                     </h2>
 
-                    <div className="space-y-6" data-oid="alv5l_:">
+                    <div className="space-y-6" data-oid="_k.rf.p">
                         {/* API Provider Selection */}
-                        <div data-oid="a2354.v">
+                        <div data-oid="1:6zycy">
                             <label
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="t431wnb"
+                                data-oid="5z.nybu"
                             >
                                 AI-Anbieter
                             </label>
@@ -280,25 +280,25 @@ export default function Settings() {
                                 value={apiProvider}
                                 onChange={(e) => handleProviderChange(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                data-oid=":j:1ifm"
+                                data-oid="b6_z93e"
                             >
-                                <option value="openai" data-oid="ue0m7t3">
+                                <option value="openai" data-oid="1t.xu7l">
                                     OpenAI
                                 </option>
-                                <option value="openrouter" data-oid="h3mvbbt">
+                                <option value="openrouter" data-oid="1xw-z_v">
                                     OpenRouter (Kostenlose Modelle)
                                 </option>
-                                <option value="deepseek" data-oid="pwdhl3w">
+                                <option value="deepseek" data-oid="2csl6_u">
                                     DeepSeek
                                 </option>
                             </select>
                         </div>
 
                         {/* API Key */}
-                        <div data-oid="v:m:wlm">
+                        <div data-oid="uwoe27l">
                             <label
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="h.1dllp"
+                                data-oid="j6shwp9"
                             >
                                 API-Schlüssel
                             </label>
@@ -308,10 +308,10 @@ export default function Settings() {
                                 onChange={(e) => handleApiKeyChange(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 placeholder="Geben Sie Ihren API-Schlüssel ein"
-                                data-oid="9gsms9z"
+                                data-oid="j6blxh4"
                             />
 
-                            <p className="text-sm text-gray-500 mt-1" data-oid="t-woc0l">
+                            <p className="text-sm text-gray-500 mt-1" data-oid="l83_khk">
                                 Ihr API-Schlüssel wird sicher lokal gespeichert
                                 {apiProvider === 'openrouter' &&
                                     ' • Modelle werden automatisch geladen'}
@@ -319,10 +319,10 @@ export default function Settings() {
                         </div>
 
                         {/* Model Selection */}
-                        <div data-oid="model-selection">
+                        <div data-oid="vo-905i">
                             <label
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="model-label"
+                                data-oid="2..1saa"
                             >
                                 AI-Modell
                             </label>
@@ -330,13 +330,13 @@ export default function Settings() {
                             {isLoadingModels ? (
                                 <div
                                     className="flex items-center justify-center py-8 border border-gray-300 rounded-lg"
-                                    data-oid="zd2qmv0"
+                                    data-oid="r0jd86e"
                                 >
                                     <div
                                         className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600 mr-3"
-                                        data-oid="qkbc1l6"
+                                        data-oid="0bgct6d"
                                     ></div>
-                                    <span className="text-gray-600" data-oid="tg:zppe">
+                                    <span className="text-gray-600" data-oid="eumqlf9">
                                         Modelle werden geladen...
                                     </span>
                                 </div>
@@ -345,13 +345,13 @@ export default function Settings() {
                                     value={selectedModel}
                                     onChange={(e) => setSelectedModel(e.target.value)}
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                    data-oid="model-select"
+                                    data-oid="j6wfwch"
                                 >
-                                    <option value="" data-oid="tz2hh9t">
+                                    <option value="" data-oid="szd8nvo">
                                         Modell auswählen
                                     </option>
                                     {availableModels.map((model) => (
-                                        <option key={model.id} value={model.id} data-oid="suyudql">
+                                        <option key={model.id} value={model.id} data-oid="ujow.te">
                                             {model.name}
                                             {model.free && ' (Kostenlos)'}
                                         </option>
@@ -360,7 +360,7 @@ export default function Settings() {
                             ) : (
                                 <div
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 text-gray-500"
-                                    data-oid="-vsj1xv"
+                                    data-oid="4jvc6iz"
                                 >
                                     {apiProvider === 'openrouter' && !apiKey
                                         ? 'API-Schlüssel eingeben um Modelle zu laden'
@@ -371,7 +371,7 @@ export default function Settings() {
                             {selectedModel && availableModels.length > 0 && (
                                 <div
                                     className="mt-2 p-3 bg-blue-50 border border-blue-200 rounded-lg"
-                                    data-oid="0-qqhx3"
+                                    data-oid="cxqfjuu"
                                 >
                                     {(() => {
                                         const model = availableModels.find(
@@ -380,20 +380,20 @@ export default function Settings() {
                                         return model ? (
                                             <div
                                                 className="text-sm text-blue-700"
-                                                data-oid="2d8j_75"
+                                                data-oid="wrpw.h-"
                                             >
-                                                <p className="font-medium" data-oid="76_.qp-">
+                                                <p className="font-medium" data-oid=":b426v4">
                                                     {model.name}
                                                 </p>
                                                 {model.description && (
-                                                    <p className="mt-1" data-oid="i05xdnp">
+                                                    <p className="mt-1" data-oid="1qz9x1-">
                                                         {model.description}
                                                     </p>
                                                 )}
                                                 {model.free && (
                                                     <p
                                                         className="mt-1 text-green-600 font-medium"
-                                                        data-oid="cz4whmz"
+                                                        data-oid="vdpd6er"
                                                     >
                                                         ✓ Kostenloses Modell
                                                     </p>
@@ -401,7 +401,7 @@ export default function Settings() {
                                                 {model.context_length && (
                                                     <p
                                                         className="mt-1 text-gray-600"
-                                                        data-oid="0gv8.nd"
+                                                        data-oid="ey0awrc"
                                                     >
                                                         Kontext:{' '}
                                                         {model.context_length.toLocaleString()}{' '}
@@ -414,7 +414,7 @@ export default function Settings() {
                                 </div>
                             )}
 
-                            <p className="text-sm text-gray-500 mt-1" data-oid="model-help">
+                            <p className="text-sm text-gray-500 mt-1" data-oid="-oesbok">
                                 {apiProvider === 'openrouter'
                                     ? 'Nur kostenlose Modelle werden angezeigt'
                                     : 'Wählen Sie das gewünschte AI-Modell für die Analyse'}
@@ -422,10 +422,10 @@ export default function Settings() {
                         </div>
 
                         {/* Custom Prompt */}
-                        <div data-oid="2q0-hxc">
+                        <div data-oid="vlrrloy">
                             <label
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="94.wz5v"
+                                data-oid="v0306:t"
                             >
                                 Benutzerdefinierter Prompt
                             </label>
@@ -435,10 +435,10 @@ export default function Settings() {
                                 rows={4}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 placeholder="Geben Sie Ihren benutzerdefinierten Prompt ein"
-                                data-oid="tuhbcgm"
+                                data-oid="q0xc.dw"
                             />
 
-                            <p className="text-sm text-gray-500 mt-1" data-oid="97h499c">
+                            <p className="text-sm text-gray-500 mt-1" data-oid="gwiok6e">
                                 Dieser Prompt wird für die Analyse der IT-Dienstleister verwendet
                             </p>
                         </div>
@@ -446,38 +446,38 @@ export default function Settings() {
                         {/* Provider Information */}
                         <div
                             className="bg-blue-50 border border-blue-200 rounded-lg p-4"
-                            data-oid="1ah2o_k"
+                            data-oid="twiynbb"
                         >
-                            <h3 className="font-medium text-blue-900 mb-2" data-oid="nhyg9zi">
+                            <h3 className="font-medium text-blue-900 mb-2" data-oid="v3_rr51">
                                 Anbieter-Informationen
                             </h3>
-                            <div className="text-sm text-blue-700 space-y-1" data-oid="e27ivdf">
+                            <div className="text-sm text-blue-700 space-y-1" data-oid="4vtxnp:">
                                 {apiProvider === 'openai' && (
                                     <>
-                                        <p data-oid="y8gng69">• OpenAI GPT-4 und GPT-3.5 Modelle</p>
-                                        <p data-oid="_mc_h1f">• Hohe Qualität für Textanalyse</p>
-                                        <p data-oid="h7y3fm7">
+                                        <p data-oid="52o1bjs">• OpenAI GPT-4 und GPT-3.5 Modelle</p>
+                                        <p data-oid="mb1dxyb">• Hohe Qualität für Textanalyse</p>
+                                        <p data-oid=".qd6gtq">
                                             • API-Schlüssel von platform.openai.com
                                         </p>
                                     </>
                                 )}
                                 {apiProvider === 'openrouter' && (
                                     <>
-                                        <p data-oid="20g6bn5">
+                                        <p data-oid="ak6ld6u">
                                             • Zugang zu kostenlosen AI-Modellen
                                         </p>
-                                        <p data-oid=":93b2t:">• Llama, Mistral, Qwen und andere</p>
-                                        <p data-oid="-e14voo">• API-Schlüssel von openrouter.ai</p>
-                                        <p data-oid="free-models">
+                                        <p data-oid="v6zr31t">• Llama, Mistral, Qwen und andere</p>
+                                        <p data-oid="-qwvyeg">• API-Schlüssel von openrouter.ai</p>
+                                        <p data-oid="u6eb2s0">
                                             • Automatische Erkennung kostenloser Modelle
                                         </p>
                                     </>
                                 )}
                                 {apiProvider === 'deepseek' && (
                                     <>
-                                        <p data-oid="vjuv-ej">• DeepSeek AI-Modelle</p>
-                                        <p data-oid="z0.gypq">• Kostengünstige Alternative</p>
-                                        <p data-oid="4kifuzc">
+                                        <p data-oid="vkkhzf7">• DeepSeek AI-Modelle</p>
+                                        <p data-oid="ea10p7p">• Kostengünstige Alternative</p>
+                                        <p data-oid="8e:jlwv">
                                             • API-Schlüssel von platform.deepseek.com
                                         </p>
                                     </>
@@ -486,19 +486,19 @@ export default function Settings() {
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="flex justify-between items-center" data-oid="ns2echk">
-                            <div className="flex space-x-3" data-oid="jl9zgtm">
+                        <div className="flex justify-between items-center" data-oid="m:gi_6z">
+                            <div className="flex space-x-3" data-oid="kk3yp:h">
                                 <button
                                     onClick={handleTestConnection}
                                     disabled={isLoadingModels || !apiKey}
                                     className="bg-gray-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-700 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                    data-oid="test-connection"
+                                    data-oid="hzvlwg7"
                                 >
                                     {isLoadingModels ? (
-                                        <div className="flex items-center" data-oid="31:vqvo">
+                                        <div className="flex items-center" data-oid="9x9blpr">
                                             <div
                                                 className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
-                                                data-oid="3w02sy-"
+                                                data-oid="36a3esx"
                                             ></div>
                                             Teste...
                                         </div>
@@ -513,13 +513,13 @@ export default function Settings() {
                                         isLoadingModels || (apiProvider === 'openrouter' && !apiKey)
                                     }
                                     className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                    data-oid="refresh-models"
+                                    data-oid="z1.kzef"
                                 >
                                     {isLoadingModels ? (
-                                        <div className="flex items-center" data-oid="q87hity">
+                                        <div className="flex items-center" data-oid="9-yjot-">
                                             <div
                                                 className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
-                                                data-oid="kpdhplr"
+                                                data-oid="bspy8c2"
                                             ></div>
                                             Laden...
                                         </div>
@@ -533,13 +533,13 @@ export default function Settings() {
                                 onClick={handleSaveSettings}
                                 disabled={isSaving}
                                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                data-oid="8dlmhv6"
+                                data-oid="8:tcvy7"
                             >
                                 {isSaving ? (
-                                    <div className="flex items-center" data-oid="v:4j8s7">
+                                    <div className="flex items-center" data-oid="8wqvr7l">
                                         <div
                                             className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"
-                                            data-oid="z5_gn2s"
+                                            data-oid="ee527ek"
                                         ></div>
                                         Speichern...
                                     </div>

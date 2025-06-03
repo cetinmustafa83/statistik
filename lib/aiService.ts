@@ -229,8 +229,12 @@ export class AIService {
     }
 
     // AI Query functionality
-    async queryAI(): Promise<{ success: boolean; error?: string }> {
+    async queryAI(
+        searchQuery?: string,
+    ): Promise<{ success: boolean; error?: string; responseTime?: number; resultsCount?: number }> {
+        const startTime = Date.now();
         const settings = db.getAPISettings();
+
         if (!settings || !settings.apiKey) {
             return {
                 success: false,
@@ -274,6 +278,9 @@ export class AIService {
                     throw new Error(`Unbekannter Provider: ${settings.provider}`);
             }
 
+            const endTime = Date.now();
+            const responseTime = (endTime - startTime) / 1000;
+
             // Parse and save the response
             const companies = this.parseAIResponse(response);
             if (companies.length > 0) {
@@ -285,14 +292,23 @@ export class AIService {
                     prompt: settings.prompt,
                     response: JSON.stringify(companies),
                     success: true,
+                    responseTime,
+                    searchQuery,
+                    resultsCount: companies.length,
                 });
 
-                return { success: true };
+                return {
+                    success: true,
+                    responseTime,
+                    resultsCount: companies.length,
+                };
             } else {
                 throw new Error('Keine gültigen Unternehmensdaten in der Antwort gefunden');
             }
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : 'Unbekannter Fehler';
+            const endTime = Date.now();
+            const responseTime = (endTime - startTime) / 1000;
 
             // Log failed query
             db.addQueryLog({
@@ -301,11 +317,16 @@ export class AIService {
                 response: '',
                 success: false,
                 error: errorMessage,
+                responseTime,
+                searchQuery,
+                resultsCount: 0,
             });
 
             return {
                 success: false,
                 error: errorMessage,
+                responseTime,
+                resultsCount: 0,
             };
         }
     }

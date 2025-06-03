@@ -151,6 +151,18 @@ interface QueryLog {
     response: string;
     success: boolean;
     error?: string;
+    responseTime?: number;
+    searchQuery?: string;
+    resultsCount?: number;
+}
+
+interface SearchHistory {
+    id?: number;
+    timestamp: Date;
+    query: string;
+    filters: any;
+    resultsCount: number;
+    provider: string;
 }
 
 class DatabaseManager {
@@ -240,11 +252,45 @@ class DatabaseManager {
                 timestamp: new Date(),
             };
             logs.unshift(newLog);
-            // Keep only last 50 logs
-            const trimmedLogs = logs.slice(0, 50);
+            // Keep only last 100 logs
+            const trimmedLogs = logs.slice(0, 100);
             localStorage.setItem('queryLogs', JSON.stringify(trimmedLogs));
         } catch (error) {
             console.error('Error adding query log:', error);
+        }
+    }
+
+    // Search history methods
+    addSearchHistory(search: Omit<SearchHistory, 'id'>) {
+        if (!this.isClient) return;
+        try {
+            const history = this.getSearchHistory();
+            const newSearch = {
+                ...search,
+                id: Date.now(),
+                timestamp: new Date(),
+            };
+            history.unshift(newSearch);
+            // Keep only last 50 searches
+            const trimmedHistory = history.slice(0, 50);
+            localStorage.setItem('searchHistory', JSON.stringify(trimmedHistory));
+        } catch (error) {
+            console.error('Error adding search history:', error);
+        }
+    }
+
+    getSearchHistory(limit: number = 20): SearchHistory[] {
+        if (!this.isClient) return [];
+        try {
+            const data = localStorage.getItem('searchHistory');
+            const history = data ? JSON.parse(data) : [];
+            return history.slice(0, limit).map((search: any) => ({
+                ...search,
+                timestamp: new Date(search.timestamp),
+            }));
+        } catch (error) {
+            console.error('Error getting search history:', error);
+            return [];
         }
     }
 
@@ -274,9 +320,67 @@ class DatabaseManager {
         localStorage.removeItem('companies');
         localStorage.removeItem('apiSettings');
         localStorage.removeItem('queryLogs');
+        localStorage.removeItem('searchHistory');
         console.log('All data cleared');
+    }
+
+    // Analytics methods
+    getSearchAnalytics() {
+        const logs = this.getQueryLogs(100);
+        const history = this.getSearchHistory(50);
+        
+        return {
+            totalSearches: history.length,
+            totalQueries: logs.length,
+            successRate: logs.length > 0 ? (logs.filter(l => l.success).length / logs.length) * 100 : 0,
+            averageResponseTime: logs.length > 0 ? logs.reduce((sum, log) => sum + (log.responseTime || 0), 0) / logs.length : 0,
+            topSearchTerms: this.getTopSearchTerms(history),
+            queryTrends: this.getQueryTrends(logs),
+            providerUsage: this.getProviderUsage(logs)
+        };
+    }
+
+    private getTopSearchTerms(history: SearchHistory[]) {
+        const termCounts = history.reduce((acc, search) => {
+            const terms = search.query.toLowerCase().split(' ').filter(term => term.length > 2);
+            terms.forEach(term => {
+                acc[term] = (acc[term] || 0) + 1;
+            });
+            return acc;
+        }, {} as Record<string, number>);
+
+        return Object.entries(termCounts)
+            .sort(([,a], [,b]) => b - a)
+            .slice(0, 10)
+            .map(([term, count]) => ({ term, count }));
+    }
+
+    private getQueryTrends(logs: QueryLog[]) {
+        const last7Days = Array.from({ length: 7 }, (_, i) => {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            return date.toISOString().split('T')[0];
+        }).reverse();
+
+        return last7Days.map(date => {
+            const count = logs.filter(log => 
+                log.timestamp.toISOString().split('T')[0] === date
+            ).length;
+            return { date, count };
+        });
+    }
+
+    private getProviderUsage(logs: QueryLog[]) {
+        const providerCounts = logs.reduce((acc, log) => {
+            acc[log.provider] = (acc[log.provider] || 0) + 1;
+            return acc;
+        }, {} as Record<string, number>);
+
+        return Object.entries(providerCounts)
+            .map(([provider, count]) => ({ provider, count }))
+            .sort((a, b) => b.count - a.count);
     }
 }
 
 export const db = new DatabaseManager();
-export type { ITCompany, APISettings, QueryLog, AIModel };
+export type { ITCompany, APISettings, QueryLog, AIModel, SearchHistory };
