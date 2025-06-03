@@ -1,4 +1,4 @@
-interface ITCompany {
+export interface ITCompany {
     id?: number;
     rank: number;
     name: string;
@@ -62,10 +62,12 @@ class DatabaseManager {
         if (!this.isClient) return [];
         try {
             const data = localStorage.getItem('companies');
-            const companies = data ? JSON.parse(data) : [];
+            if (!data) return [];
+            const companies = JSON.parse(data);
+            if (!Array.isArray(companies)) return [];
             return companies.map((c: any) => ({
                 ...c,
-                lastUpdated: new Date(c.lastUpdated),
+                lastUpdated: c.lastUpdated ? new Date(c.lastUpdated) : new Date(),
             }));
         } catch (error) {
             console.error('Error getting companies:', error);
@@ -94,8 +96,13 @@ class DatabaseManager {
         if (!this.isClient) return null;
         try {
             const data = localStorage.getItem('apiSettings');
-            const settings = data ? JSON.parse(data) : null;
-            return settings ? { ...settings, lastUsed: new Date(settings.lastUsed) } : null;
+            if (!data) return null;
+            const settings = JSON.parse(data);
+            if (!settings) return null;
+            return {
+                ...settings,
+                lastUsed: settings.lastUsed ? new Date(settings.lastUsed) : new Date(),
+            };
         } catch (error) {
             console.error('Error getting API settings:', error);
             return null;

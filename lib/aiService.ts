@@ -433,14 +433,14 @@ export class AIService {
 
                 if (Array.isArray(parsed)) {
                     return parsed.map((item, index) => ({
-                        rank: item.rank || index + 1,
-                        name: item.name || `Unternehmen ${index + 1}`,
-                        location: item.location || 'Deutschland',
-                        specialty: item.specialty || 'IT-Dienstleistungen',
-                        revenue2023: parseFloat(item.revenue2023) || 0,
-                        revenue2024: parseFloat(item.revenue2024) || 0,
-                        employees: parseInt(item.employees) || 0,
-                        marketShare: parseFloat(item.marketShare) || 0,
+                        rank: Number(item.rank) || index + 1,
+                        name: String(item.name || `Unternehmen ${index + 1}`),
+                        location: String(item.location || 'Deutschland'),
+                        specialty: String(item.specialty || 'IT-Dienstleistungen'),
+                        revenue2023: Number(item.revenue2023) || 0,
+                        revenue2024: Number(item.revenue2024) || 0,
+                        employees: Number(item.employees) || 0,
+                        marketShare: Number(item.marketShare) || 0,
                         lastUpdated: new Date(),
                     }));
                 }

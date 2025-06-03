@@ -24,7 +24,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     const [toasts, setToasts] = useState<Toast[]>([]);
 
     const addToast = useCallback((toast: Omit<Toast, 'id'>) => {
-        const id = Math.random().toString(36).substr(2, 9);
+        const id = Math.random().toString(36).substring(2, 11);
         const newToast = { ...toast, id };
 
         setToasts((prev) => [...prev, newToast]);
@@ -56,17 +56,31 @@ export function useToast() {
     return context;
 }
 
-function ToastContainer({ toasts, onRemove }: { toasts: Toast[]; onRemove: (id: string) => void }) {
+function ToastContainer({
+    toasts,
+    onRemove,
+    ...props
+}: {
+    toasts: Toast[];
+    onRemove: (id: string) => void;
+}) {
     return (
-        <div className="fixed top-4 right-4 z-50 space-y-2" data-oid="6bine7j">
+        <div className="fixed top-4 right-4 z-50 space-y-2" {...props} data-oid="e7i6e-.">
             {toasts.map((toast) => (
-                <ToastItem key={toast.id} toast={toast} onRemove={onRemove} data-oid="wqi:u._" />
+                <ToastItem key={toast.id} toast={toast} onRemove={onRemove} data-oid="f59y1-n" />
             ))}
         </div>
     );
 }
 
-function ToastItem({ toast, onRemove }: { toast: Toast; onRemove: (id: string) => void }) {
+function ToastItem({
+    toast,
+    onRemove,
+    ...props
+}: {
+    toast: Toast;
+    onRemove: (id: string) => void;
+}) {
     const getToastStyles = (type: ToastType) => {
         switch (type) {
             case 'success':
@@ -100,7 +114,8 @@ function ToastItem({ toast, onRemove }: { toast: Toast; onRemove: (id: string) =
     return (
         <div
             className={`max-w-sm w-full border rounded-lg p-4 shadow-lg animate-slide-in ${getToastStyles(toast.type)}`}
-            data-oid="a94.sdi"
+            {...props}
+            data-oid="3g0d5wu"
         >
             <div className="flex items-start" data-oid="l9ml12w">
                 <div className="flex-shrink-0" data-oid=":-ygt31">
