@@ -290,58 +290,58 @@ export default function AISearchPage() {
         return (
             <div
                 className="min-h-screen bg-gray-50 flex items-center justify-center"
-                data-oid="minxpnm"
+                data-oid="w6qapu:"
             >
                 <div
                     className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"
-                    data-oid="gxtg1wt"
+                    data-oid="rekc571"
                 ></div>
             </div>
         );
     }
 
     return (
-        <div className="min-h-screen bg-gray-50" data-oid="n1hyf_f">
+        <div className="min-h-screen bg-gray-50" data-oid="-j831c7">
             {/* Navigation */}
-            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid="4y_du:z">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="lnou0zx">
-                    <div className="flex justify-between items-center py-4" data-oid="llo5392">
-                        <div className="flex items-center space-x-3" data-oid="ggl:h9r">
+            <nav className="bg-white shadow-sm border-b border-gray-200" data-oid="iz5vm5j">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-oid="7cgwhml">
+                    <div className="flex justify-between items-center py-4" data-oid="_gxb:3b">
+                        <div className="flex items-center space-x-3" data-oid="hppc-yz">
                             <div
                                 className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center"
-                                data-oid="uh_qas0"
+                                data-oid="v1-tot-"
                             >
-                                <span className="text-white font-bold text-lg" data-oid="1w6.:39">
+                                <span className="text-white font-bold text-lg" data-oid="rsza3m1">
                                     AI
                                 </span>
                             </div>
-                            <h1 className="text-2xl font-bold text-gray-900" data-oid="r:3tm4u">
+                            <h1 className="text-2xl font-bold text-gray-900" data-oid="tux.b0y">
                                 AI Search
                             </h1>
                         </div>
 
-                        <div className="flex items-center space-x-4" data-oid="mlp_g7n">
+                        <div className="flex items-center space-x-4" data-oid="9f6735x">
                             <button
                                 onClick={goToDashboard}
                                 className="text-gray-600 hover:text-blue-600 transition-colors"
-                                data-oid="lgn6r_f"
+                                data-oid="gd6cc:_"
                             >
                                 Dashboard
                             </button>
                             <button
                                 onClick={goToSettings}
                                 className="text-gray-600 hover:text-blue-600 transition-colors"
-                                data-oid="ho0dmll"
+                                data-oid="-vk9ouw"
                             >
                                 Einstellungen
                             </button>
-                            <span className="text-gray-600" data-oid="eee8r7:">
+                            <span className="text-gray-600" data-oid="8i77or.">
                                 Willkommen, {userEmail}
                             </span>
                             <button
                                 onClick={handleLogout}
                                 className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
-                                data-oid="a3ofrzt"
+                                data-oid="qduh64c"
                             >
                                 Abmelden
                             </button>
@@ -351,39 +351,39 @@ export default function AISearchPage() {
             </nav>
 
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid="076as.u">
+            <main className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8" data-oid=":56o4n6">
                 {/* Search Section */}
                 <div
                     className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8"
-                    data-oid="ag6:rup"
+                    data-oid="g2a9lwy"
                 >
-                    <h2 className="text-xl font-semibold text-gray-900 mb-4" data-oid="z8o:hxd">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-4" data-oid="8.6.9kj">
                         AI-gestützte Unternehmenssuche
                     </h2>
 
-                    <div className="space-y-4" data-oid="zh886n4">
-                        <div className="flex space-x-4" data-oid="3v3cj2c">
-                            <div className="flex-1" data-oid="6mnq_lo">
+                    <div className="space-y-4" data-oid="p6p0k.g">
+                        <div className="flex space-x-4" data-oid="a-m:t1u">
+                            <div className="flex-1" data-oid="d-w-05r">
                                 <input
                                     type="text"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                     placeholder="Suchen Sie nach IT-Dienstleistern (z.B. 'Cloud Computing', 'SAP Beratung', 'Cybersecurity')"
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                    data-oid="w9uc:7y"
+                                    data-oid="3k5dp:p"
                                 />
                             </div>
                             <button
                                 onClick={handleSearch}
                                 disabled={isSearching}
                                 className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                data-oid="_cc3an6"
+                                data-oid="zkvhwhl"
                             >
                                 {isSearching ? (
-                                    <div className="flex items-center" data-oid="pth:s_v">
+                                    <div className="flex items-center" data-oid="dtdd8ns">
                                         <div
                                             className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"
-                                            data-oid="pn87qq9"
+                                            data-oid="cb_r9:r"
                                         ></div>
                                         Suchen...
                                     </div>
@@ -393,11 +393,11 @@ export default function AISearchPage() {
                             </button>
                         </div>
 
-                        <div className="flex items-center space-x-4" data-oid="adb6i44">
+                        <div className="flex items-center space-x-4" data-oid="wgq8hqo">
                             <button
                                 onClick={() => setShowCustomPrompt(!showCustomPrompt)}
                                 className="text-sm text-blue-600 hover:text-blue-700"
-                                data-oid="djlmiyg"
+                                data-oid="ylnsxbl"
                             >
                                 {showCustomPrompt
                                     ? 'Einfache Suche'
@@ -406,17 +406,17 @@ export default function AISearchPage() {
                             <button
                                 onClick={() => setShowAdvancedFilters(!showAdvancedFilters)}
                                 className="text-sm text-gray-600 hover:text-gray-700"
-                                data-oid="0grswtr"
+                                data-oid="8kbt-z-"
                             >
                                 {showAdvancedFilters ? 'Filter ausblenden' : 'Erweiterte Filter'}
                             </button>
                         </div>
 
                         {showCustomPrompt && (
-                            <div data-oid="gcdq6ko">
+                            <div data-oid="78d97:7">
                                 <label
                                     className="block text-sm font-medium text-gray-700 mb-2"
-                                    data-oid="ycseo4a"
+                                    data-oid="a5jcd8o"
                                 >
                                     Benutzerdefinierter AI-Prompt
                                 </label>
@@ -426,7 +426,7 @@ export default function AISearchPage() {
                                     rows={3}
                                     placeholder="Geben Sie einen detaillierten Prompt für die AI-Analyse ein..."
                                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                    data-oid="-zp2b3."
+                                    data-oid="gdicj6t"
                                 />
                             </div>
                         )}
@@ -436,38 +436,38 @@ export default function AISearchPage() {
                 {/* Statistics Dashboard */}
                 <div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8"
-                    data-oid="eyxsuqs"
+                    data-oid="02f:89j"
                 >
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                        data-oid="pu.v6cj"
+                        data-oid="w2-mqdu"
                     >
-                        <div className="flex items-center" data-oid="0nbd3ee">
+                        <div className="flex items-center" data-oid="1kxm73q">
                             <div
                                 className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
-                                data-oid="_:f5-q3"
+                                data-oid="reay38-"
                             >
                                 <svg
                                     className="w-6 h-6 text-blue-600"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="ui9o50u"
+                                    data-oid="01m6.xm"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                        data-oid="si:-dbs"
+                                        data-oid="rkpr8p7"
                                     />
                                 </svg>
                             </div>
-                            <div className="ml-4" data-oid="9nrmh6j">
-                                <p className="text-sm font-medium text-gray-600" data-oid="ostfq6f">
+                            <div className="ml-4" data-oid="6_mfnjn">
+                                <p className="text-sm font-medium text-gray-600" data-oid="uq-e9t3">
                                     Gesamte Abfragen
                                 </p>
-                                <p className="text-2xl font-bold text-gray-900" data-oid="-qq4skt">
+                                <p className="text-2xl font-bold text-gray-900" data-oid="xnado20">
                                     {searchStats.totalQueries}
                                 </p>
                             </div>
@@ -476,37 +476,37 @@ export default function AISearchPage() {
 
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                        data-oid="_738ukg"
+                        data-oid="yigkrcv"
                     >
-                        <div className="flex items-center" data-oid="_mdtsf4">
+                        <div className="flex items-center" data-oid="c7r.ssf">
                             <div
                                 className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center"
-                                data-oid="hqb_2-t"
+                                data-oid="o3z8ojy"
                             >
                                 <svg
                                     className="w-6 h-6 text-green-600"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="uf5thaq"
+                                    data-oid="iddxwgm"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        data-oid="i4gbrpj"
+                                        data-oid="jc_nn6:"
                                     />
                                 </svg>
                             </div>
-                            <div className="ml-4" data-oid="1_vnne0">
-                                <p className="text-sm font-medium text-gray-600" data-oid="vzwogup">
+                            <div className="ml-4" data-oid="9d8c2pj">
+                                <p className="text-sm font-medium text-gray-600" data-oid="jkly2kk">
                                     Erfolgreiche Suchen
                                 </p>
-                                <p className="text-2xl font-bold text-gray-900" data-oid="rnnot8e">
+                                <p className="text-2xl font-bold text-gray-900" data-oid="0.c3.s5">
                                     {searchStats.successfulQueries}
                                 </p>
-                                <p className="text-xs text-green-600" data-oid="hv5:wvs">
+                                <p className="text-xs text-green-600" data-oid="prd6dp8">
                                     {searchStats.totalQueries > 0
                                         ? `${((searchStats.successfulQueries / searchStats.totalQueries) * 100).toFixed(1)}% Erfolgsrate`
                                         : '0% Erfolgsrate'}
@@ -517,34 +517,34 @@ export default function AISearchPage() {
 
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                        data-oid="ay4cfb8"
+                        data-oid="xswbsc9"
                     >
-                        <div className="flex items-center" data-oid="-m20mq3">
+                        <div className="flex items-center" data-oid="8grw7ul">
                             <div
                                 className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center"
-                                data-oid="n:x1hry"
+                                data-oid="nx7xpwn"
                             >
                                 <svg
                                     className="w-6 h-6 text-yellow-600"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="t79b90g"
+                                    data-oid="gord54r"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                        data-oid="7a1frt3"
+                                        data-oid="6l_ra.."
                                     />
                                 </svg>
                             </div>
-                            <div className="ml-4" data-oid="wjmictl">
-                                <p className="text-sm font-medium text-gray-600" data-oid="pfhfi0b">
+                            <div className="ml-4" data-oid="sl-mbxg">
+                                <p className="text-sm font-medium text-gray-600" data-oid="ujur7n.">
                                     Ø Antwortzeit
                                 </p>
-                                <p className="text-2xl font-bold text-gray-900" data-oid="h6net0g">
+                                <p className="text-2xl font-bold text-gray-900" data-oid="2e3ocda">
                                     {searchStats.averageResponseTime.toFixed(1)}s
                                 </p>
                             </div>
@@ -553,34 +553,34 @@ export default function AISearchPage() {
 
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                        data-oid="iqolae_"
+                        data-oid="xiwmr_-"
                     >
-                        <div className="flex items-center" data-oid=".6o4t99">
+                        <div className="flex items-center" data-oid="9-s::cq">
                             <div
                                 className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center"
-                                data-oid="18h15om"
+                                data-oid="pvmu9.-"
                             >
                                 <svg
                                     className="w-6 h-6 text-purple-600"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="lm23xt:"
+                                    data-oid="1bd-t1d"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                                        data-oid="ew5qr-3"
+                                        data-oid="nyy3ub3"
                                     />
                                 </svg>
                             </div>
-                            <div className="ml-4" data-oid="1am_8e2">
-                                <p className="text-sm font-medium text-gray-600" data-oid="7779j8o">
+                            <div className="ml-4" data-oid="u27mvbr">
+                                <p className="text-sm font-medium text-gray-600" data-oid="jdg-y2l">
                                     Gefundene Unternehmen
                                 </p>
-                                <p className="text-2xl font-bold text-gray-900" data-oid="7qwbu10">
+                                <p className="text-2xl font-bold text-gray-900" data-oid="d3k60ue">
                                     {filteredCompanies.length}
                                 </p>
                             </div>
@@ -592,16 +592,16 @@ export default function AISearchPage() {
                 {showAdvancedFilters && (
                     <div
                         className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8"
-                        data-oid="7bkv4z2"
+                        data-oid="xjudc3f"
                     >
-                        <div className="flex justify-between items-center mb-4" data-oid="mfz1lte">
-                            <h3 className="text-lg font-semibold text-gray-900" data-oid="xd574jq">
+                        <div className="flex justify-between items-center mb-4" data-oid="fndgjy2">
+                            <h3 className="text-lg font-semibold text-gray-900" data-oid="zy2y28:">
                                 Erweiterte Filter
                             </h3>
                             <button
                                 onClick={clearFilters}
                                 className="text-sm text-gray-600 hover:text-gray-700"
-                                data-oid="8k1001z"
+                                data-oid="ytppc2a"
                             >
                                 Filter zurücksetzen
                             </button>
@@ -609,12 +609,12 @@ export default function AISearchPage() {
 
                         <div
                             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-                            data-oid="_hi_3u1"
+                            data-oid="g_d_e8z"
                         >
-                            <div data-oid="spxnocj">
+                            <div data-oid="l.c:5wp">
                                 <label
                                     className="block text-sm font-medium text-gray-700 mb-2"
-                                    data-oid="m7ht6px"
+                                    data-oid="6qyhol:"
                                 >
                                     Standort
                                 </label>
@@ -624,14 +624,14 @@ export default function AISearchPage() {
                                     onChange={(e) => handleFilterChange('location', e.target.value)}
                                     placeholder="z.B. München, Berlin"
                                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                    data-oid="8y_izja"
+                                    data-oid=":-lne45"
                                 />
                             </div>
 
-                            <div data-oid="dt.myfj">
+                            <div data-oid="w--xgb.">
                                 <label
                                     className="block text-sm font-medium text-gray-700 mb-2"
-                                    data-oid="5qo4ad1"
+                                    data-oid="wq4weqt"
                                 >
                                     Spezialisierung
                                 </label>
@@ -643,18 +643,18 @@ export default function AISearchPage() {
                                     }
                                     placeholder="z.B. Cloud, SAP, Security"
                                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                    data-oid="b3ku4ef"
+                                    data-oid="tz6ra91"
                                 />
                             </div>
 
-                            <div data-oid="kef-4ls">
+                            <div data-oid="63rj5_t">
                                 <label
                                     className="block text-sm font-medium text-gray-700 mb-2"
-                                    data-oid="kjydp4j"
+                                    data-oid="zow9vfw"
                                 >
                                     Umsatz 2024 (€{filters.minRevenue}B - €{filters.maxRevenue}B)
                                 </label>
-                                <div className="flex space-x-2" data-oid="kecbb9:">
+                                <div className="flex space-x-2" data-oid="2f300_e">
                                     <input
                                         type="range"
                                         min="0"
@@ -667,7 +667,7 @@ export default function AISearchPage() {
                                             )
                                         }
                                         className="flex-1"
-                                        data-oid="ykb5udy"
+                                        data-oid="uxap2uq"
                                     />
 
                                     <input
@@ -682,20 +682,20 @@ export default function AISearchPage() {
                                             )
                                         }
                                         className="flex-1"
-                                        data-oid="hil_o6q"
+                                        data-oid=".fbexjm"
                                     />
                                 </div>
                             </div>
 
-                            <div className="md:col-span-2 lg:col-span-3" data-oid="06whn63">
+                            <div className="md:col-span-2 lg:col-span-3" data-oid="m6w18or">
                                 <label
                                     className="block text-sm font-medium text-gray-700 mb-2"
-                                    data-oid=":1orrp2"
+                                    data-oid="bhn2rvm"
                                 >
                                     Mitarbeiteranzahl ({filters.minEmployees.toLocaleString()} -{' '}
                                     {filters.maxEmployees.toLocaleString()})
                                 </label>
-                                <div className="flex space-x-2" data-oid="x9:anlo">
+                                <div className="flex space-x-2" data-oid="7hcmvet">
                                     <input
                                         type="range"
                                         min="0"
@@ -709,7 +709,7 @@ export default function AISearchPage() {
                                             )
                                         }
                                         className="flex-1"
-                                        data-oid="x3z846r"
+                                        data-oid="auyam1p"
                                     />
 
                                     <input
@@ -725,7 +725,7 @@ export default function AISearchPage() {
                                             )
                                         }
                                         className="flex-1"
-                                        data-oid="g2.o10r"
+                                        data-oid="yf0xle2"
                                     />
                                 </div>
                             </div>
@@ -734,49 +734,49 @@ export default function AISearchPage() {
                 )}
 
                 {/* Results and Analytics */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" data-oid="fmjo810">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" data-oid="j9ng3mi">
                     {/* Search Results */}
-                    <div className="lg:col-span-2" data-oid="awaoptu">
+                    <div className="lg:col-span-2" data-oid="x0eocly">
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100"
-                            data-oid="7i-k_07"
+                            data-oid="lwca9wc"
                         >
-                            <div className="p-6 border-b border-gray-100" data-oid="5pr.dyg">
+                            <div className="p-6 border-b border-gray-100" data-oid="cpkjpf_">
                                 <h3
                                     className="text-xl font-semibold text-gray-900"
-                                    data-oid="8:8fl-v"
+                                    data-oid="e4qik9_"
                                 >
                                     Suchergebnisse ({filteredCompanies.length})
                                 </h3>
                             </div>
 
-                            <div className="divide-y divide-gray-100" data-oid="0nwzt9q">
+                            <div className="divide-y divide-gray-100" data-oid="rl73o:x">
                                 {filteredCompanies.length > 0 ? (
                                     filteredCompanies.map((company) => (
                                         <div
                                             key={company.rank}
                                             className="p-6 hover:bg-gray-50 cursor-pointer transition-colors"
                                             onClick={() => setSelectedCompany(company)}
-                                            data-oid="2-uos-g"
+                                            data-oid="fa2nw-k"
                                         >
                                             <div
                                                 className="flex items-start justify-between"
-                                                data-oid="wgs3.0:"
+                                                data-oid=".as9m41"
                                             >
-                                                <div className="flex-1" data-oid="5kxi_l5">
+                                                <div className="flex-1" data-oid="_a4vmem">
                                                     <div
                                                         className="flex items-center space-x-3 mb-2"
-                                                        data-oid="w6wtkfw"
+                                                        data-oid="2ug2z4."
                                                     >
                                                         <div
                                                             className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-                                                            data-oid="ill8qbk"
+                                                            data-oid="n5btyic"
                                                         >
                                                             {company.rank}
                                                         </div>
                                                         <h4
                                                             className="text-lg font-semibold text-gray-900"
-                                                            data-oid="b67p-mo"
+                                                            data-oid="9rr45mm"
                                                         >
                                                             {company.name}
                                                         </h4>
@@ -784,39 +784,39 @@ export default function AISearchPage() {
 
                                                     <div
                                                         className="grid grid-cols-2 gap-4 text-sm text-gray-600"
-                                                        data-oid="ce7pakx"
+                                                        data-oid="tqdbane"
                                                     >
-                                                        <div data-oid="g:8-lh.">
+                                                        <div data-oid="o39p.u5">
                                                             <span
                                                                 className="font-medium"
-                                                                data-oid="ud9wkw."
+                                                                data-oid="vj:a3_h"
                                                             >
                                                                 Standort:
                                                             </span>{' '}
                                                             {company.location}
                                                         </div>
-                                                        <div data-oid="yepgcn5">
+                                                        <div data-oid="2ztkem_">
                                                             <span
                                                                 className="font-medium"
-                                                                data-oid="ky1fi7t"
+                                                                data-oid=":dgg2dm"
                                                             >
                                                                 Spezialisierung:
                                                             </span>{' '}
                                                             {company.specialty}
                                                         </div>
-                                                        <div data-oid="rjk359w">
+                                                        <div data-oid="a4o6gbe">
                                                             <span
                                                                 className="font-medium"
-                                                                data-oid="tt.tpra"
+                                                                data-oid="bnqzd-5"
                                                             >
                                                                 Umsatz 2024:
                                                             </span>{' '}
                                                             €{company.revenue2024}B
                                                         </div>
-                                                        <div data-oid="k_zy-43">
+                                                        <div data-oid="gpyu74p">
                                                             <span
                                                                 className="font-medium"
-                                                                data-oid="n8-rx7r"
+                                                                data-oid="hnstut5"
                                                             >
                                                                 Mitarbeiter:
                                                             </span>{' '}
@@ -826,18 +826,18 @@ export default function AISearchPage() {
 
                                                     <div
                                                         className="mt-3 flex items-center space-x-4"
-                                                        data-oid="sibfw.l"
+                                                        data-oid="88hfwoi"
                                                     >
                                                         <span
                                                             className="inline-flex px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full"
-                                                            data-oid="an:u0u1"
+                                                            data-oid="erwd:xb"
                                                         >
                                                             Marktanteil: {company.marketShare}%
                                                         </span>
                                                         {company.revenue2023 > 0 && (
                                                             <span
                                                                 className="inline-flex px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full"
-                                                                data-oid="owsi8ea"
+                                                                data-oid="6dtu1ry"
                                                             >
                                                                 Wachstum: +
                                                                 {(
@@ -852,20 +852,20 @@ export default function AISearchPage() {
                                                     </div>
                                                 </div>
 
-                                                <div className="ml-4" data-oid="r89:son">
+                                                <div className="ml-4" data-oid="lzyx7js">
                                                     <svg
                                                         className="w-5 h-5 text-gray-400"
                                                         fill="none"
                                                         stroke="currentColor"
                                                         viewBox="0 0 24 24"
-                                                        data-oid="i2-qk:1"
+                                                        data-oid="uvg4fq4"
                                                     >
                                                         <path
                                                             strokeLinecap="round"
                                                             strokeLinejoin="round"
                                                             strokeWidth={2}
                                                             d="M9 5l7 7-7 7"
-                                                            data-oid="t8aqnf9"
+                                                            data-oid="ok0pd0k"
                                                         />
                                                     </svg>
                                                 </div>
@@ -873,34 +873,34 @@ export default function AISearchPage() {
                                         </div>
                                     ))
                                 ) : (
-                                    <div className="p-12 text-center" data-oid="xcb23oz">
+                                    <div className="p-12 text-center" data-oid="9httlp8">
                                         <div
                                             className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4"
-                                            data-oid="5aq1.u6"
+                                            data-oid="2hxv15b"
                                         >
                                             <svg
                                                 className="w-8 h-8 text-gray-400"
                                                 fill="none"
                                                 stroke="currentColor"
                                                 viewBox="0 0 24 24"
-                                                data-oid="3q:vb67"
+                                                data-oid="kff5sa2"
                                             >
                                                 <path
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
                                                     strokeWidth={2}
                                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                                    data-oid="2be346p"
+                                                    data-oid="--6z_.l"
                                                 />
                                             </svg>
                                         </div>
                                         <h3
                                             className="text-lg font-medium text-gray-900 mb-2"
-                                            data-oid="..ccxmz"
+                                            data-oid="w:z5-6k"
                                         >
                                             Keine Ergebnisse gefunden
                                         </h3>
-                                        <p className="text-gray-600" data-oid="jt_-sxf">
+                                        <p className="text-gray-600" data-oid="wf0a0fs">
                                             Versuchen Sie eine andere Suchanfrage oder passen Sie
                                             die Filter an.
                                         </p>
@@ -911,49 +911,49 @@ export default function AISearchPage() {
                     </div>
 
                     {/* Analytics Sidebar */}
-                    <div className="space-y-6" data-oid="hreq:91">
+                    <div className="space-y-6" data-oid="em1byfe">
                         {/* Query Trends */}
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                            data-oid="8y7c9vu"
+                            data-oid="g4e:1gr"
                         >
                             <h3
                                 className="text-lg font-semibold text-gray-900 mb-4"
-                                data-oid="uw7bic1"
+                                data-oid="ypqzq0e"
                             >
                                 Abfrage-Trends (7 Tage)
                             </h3>
-                            <div className="space-y-2" data-oid="38npa3z">
+                            <div className="space-y-2" data-oid="-n:m0:b">
                                 {searchStats.queryTrends.map((trend, index) => (
                                     <div
                                         key={index}
                                         className="flex items-center justify-between"
-                                        data-oid="z:kcex2"
+                                        data-oid=":3hws2o"
                                     >
-                                        <span className="text-sm text-gray-600" data-oid="do_opmu">
+                                        <span className="text-sm text-gray-600" data-oid="ofs8rwc">
                                             {new Date(trend.date).toLocaleDateString('de-DE', {
                                                 weekday: 'short',
                                             })}
                                         </span>
                                         <div
                                             className="flex items-center space-x-2"
-                                            data-oid="8ksd3fd"
+                                            data-oid="gg:m_6q"
                                         >
                                             <div
                                                 className="w-20 bg-gray-200 rounded-full h-2"
-                                                data-oid="dac2ak-"
+                                                data-oid="ejs.9dl"
                                             >
                                                 <div
                                                     className="bg-blue-500 h-2 rounded-full"
                                                     style={{
                                                         width: `${Math.min((trend.count / Math.max(...searchStats.queryTrends.map((t) => t.count), 1)) * 100, 100)}%`,
                                                     }}
-                                                    data-oid="4.cl:n-"
+                                                    data-oid="9ofz4g:"
                                                 ></div>
                                             </div>
                                             <span
                                                 className="text-sm font-medium text-gray-900 w-6"
-                                                data-oid="wif-jog"
+                                                data-oid="3tud5nq"
                                             >
                                                 {trend.count}
                                             </span>
@@ -966,46 +966,46 @@ export default function AISearchPage() {
                         {/* Top Providers */}
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                            data-oid="vht9j7g"
+                            data-oid="2o5cqim"
                         >
                             <h3
                                 className="text-lg font-semibold text-gray-900 mb-4"
-                                data-oid="5.8._ct"
+                                data-oid="er11ssn"
                             >
                                 Meist genutzte AI-Provider
                             </h3>
-                            <div className="space-y-3" data-oid="va3l3oa">
+                            <div className="space-y-3" data-oid="15ur5r.">
                                 {searchStats.topProviders.map((provider, index) => (
                                     <div
                                         key={index}
                                         className="flex items-center justify-between"
-                                        data-oid="xrsj4yq"
+                                        data-oid="r7ml2ik"
                                     >
                                         <span
                                             className="text-sm font-medium text-gray-700 capitalize"
-                                            data-oid="::2dw4r"
+                                            data-oid="xl_61g5"
                                         >
                                             {provider.provider}
                                         </span>
                                         <div
                                             className="flex items-center space-x-2"
-                                            data-oid="hcbuvr:"
+                                            data-oid="q.qa_gz"
                                         >
                                             <div
                                                 className="w-16 bg-gray-200 rounded-full h-2"
-                                                data-oid="ssps4dr"
+                                                data-oid="g380pse"
                                             >
                                                 <div
                                                     className="bg-green-500 h-2 rounded-full"
                                                     style={{
                                                         width: `${(provider.count / Math.max(...searchStats.topProviders.map((p) => p.count), 1)) * 100}%`,
                                                     }}
-                                                    data-oid="fz.lzts"
+                                                    data-oid="nibc4jb"
                                                 ></div>
                                             </div>
                                             <span
                                                 className="text-sm text-gray-600"
-                                                data-oid="w.ygslx"
+                                                data-oid="_n.m3-0"
                                             >
                                                 {provider.count}
                                             </span>
@@ -1013,7 +1013,7 @@ export default function AISearchPage() {
                                     </div>
                                 ))}
                                 {searchStats.topProviders.length === 0 && (
-                                    <p className="text-sm text-gray-500" data-oid="fn:mk64">
+                                    <p className="text-sm text-gray-500" data-oid="3e0pt._">
                                         Noch keine Daten verfügbar
                                     </p>
                                 )}
@@ -1023,24 +1023,24 @@ export default function AISearchPage() {
                         {/* Recent Queries */}
                         <div
                             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-                            data-oid="_:040k:"
+                            data-oid="0yxwmqb"
                         >
                             <h3
                                 className="text-lg font-semibold text-gray-900 mb-4"
-                                data-oid="2d-jf2o"
+                                data-oid="ftfpyf6"
                             >
                                 Letzte Abfragen
                             </h3>
-                            <div className="space-y-3" data-oid="hv93udb">
+                            <div className="space-y-3" data-oid="-r6jqdk">
                                 {queryLogs.slice(0, 5).map((log, index) => (
                                     <div
                                         key={index}
                                         className="border-l-4 border-gray-200 pl-3"
-                                        data-oid="oay4igz"
+                                        data-oid="n:jy34a"
                                     >
                                         <div
                                             className="flex items-center justify-between"
-                                            data-oid="6qsf.e6"
+                                            data-oid="fxaoyd:"
                                         >
                                             <span
                                                 className={`inline-flex px-2 py-1 text-xs font-medium rounded-full ${
@@ -1048,33 +1048,33 @@ export default function AISearchPage() {
                                                         ? 'bg-green-100 text-green-800'
                                                         : 'bg-red-100 text-red-800'
                                                 }`}
-                                                data-oid="57okfkb"
+                                                data-oid="beuh9ms"
                                             >
                                                 {log.success ? 'Erfolgreich' : 'Fehlgeschlagen'}
                                             </span>
                                             <span
                                                 className="text-xs text-gray-500"
-                                                data-oid="tn7gqiv"
+                                                data-oid="3g:4gn9"
                                             >
                                                 {log.timestamp.toLocaleTimeString('de-DE')}
                                             </span>
                                         </div>
                                         <p
                                             className="text-sm text-gray-600 mt-1 truncate"
-                                            data-oid="i-zg6we"
+                                            data-oid="35jsd46"
                                         >
                                             {log.prompt}
                                         </p>
                                         <p
                                             className="text-xs text-gray-500 capitalize"
-                                            data-oid="w1-8yo8"
+                                            data-oid="--dxi0x"
                                         >
                                             {log.provider}
                                         </p>
                                     </div>
                                 ))}
                                 {queryLogs.length === 0 && (
-                                    <p className="text-sm text-gray-500" data-oid="a5vpr93">
+                                    <p className="text-sm text-gray-500" data-oid="4w-nb78">
                                         Noch keine Abfragen durchgeführt
                                     </p>
                                 )}
@@ -1087,146 +1087,146 @@ export default function AISearchPage() {
                 {selectedCompany && (
                     <div
                         className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
-                        data-oid="g2jh817"
+                        data-oid="iw7b1ch"
                     >
                         <div
                             className="bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-                            data-oid="ezboirs"
+                            data-oid="mks2kw7"
                         >
-                            <div className="p-6 border-b border-gray-100" data-oid="1zg8pbs">
+                            <div className="p-6 border-b border-gray-100" data-oid="75xyocj">
                                 <div
                                     className="flex justify-between items-start"
-                                    data-oid="qxxsg8b"
+                                    data-oid="pw5eugq"
                                 >
-                                    <div data-oid="j3xa_uc">
+                                    <div data-oid="1-maa7z">
                                         <h2
                                             className="text-2xl font-bold text-gray-900"
-                                            data-oid="0dm.c0s"
+                                            data-oid="98.ms8i"
                                         >
                                             {selectedCompany.name}
                                         </h2>
-                                        <p className="text-gray-600" data-oid="orv7p37">
+                                        <p className="text-gray-600" data-oid="wz__l1z">
                                             Rang #{selectedCompany.rank}
                                         </p>
                                     </div>
                                     <button
                                         onClick={() => setSelectedCompany(null)}
                                         className="text-gray-400 hover:text-gray-600"
-                                        data-oid="kqrxvvx"
+                                        data-oid="vaig5yw"
                                     >
                                         <svg
                                             className="w-6 h-6"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
-                                            data-oid="8n5:ky6"
+                                            data-oid="8fsm6vg"
                                         >
                                             <path
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
                                                 strokeWidth={2}
                                                 d="M6 18L18 6M6 6l12 12"
-                                                data-oid="w4mqte9"
+                                                data-oid="nzwqp90"
                                             />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
 
-                            <div className="p-6" data-oid="sg4l3m5">
+                            <div className="p-6" data-oid="tu79.5j">
                                 <div
                                     className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                                    data-oid="lv7-o01"
+                                    data-oid="1lju205"
                                 >
-                                    <div data-oid="da:mjch">
+                                    <div data-oid="zc-9ig2">
                                         <h3
                                             className="text-lg font-semibold text-gray-900 mb-3"
-                                            data-oid="nm2xhoa"
+                                            data-oid=":qeiteo"
                                         >
                                             Unternehmensdaten
                                         </h3>
-                                        <div className="space-y-3" data-oid="uj5:rb0">
-                                            <div data-oid="pgkfm.q">
+                                        <div className="space-y-3" data-oid="gn2civf">
+                                            <div data-oid="uf2_4lu">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="8wuyd8n"
+                                                    data-oid="vjkevpx"
                                                 >
                                                     Standort:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="aoms-j9">
+                                                <p className="text-gray-900" data-oid="vgpgeu8">
                                                     {selectedCompany.location}
                                                 </p>
                                             </div>
-                                            <div data-oid="vvlfxms">
+                                            <div data-oid="1cuc2td">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="89kx01x"
+                                                    data-oid="pkjxah-"
                                                 >
                                                     Spezialisierung:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="y4nq5fz">
+                                                <p className="text-gray-900" data-oid="k6cl:i6">
                                                     {selectedCompany.specialty}
                                                 </p>
                                             </div>
-                                            <div data-oid="xsg5.h9">
+                                            <div data-oid="tsrt0vl">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="xxqx-e."
+                                                    data-oid="0gyhd-c"
                                                 >
                                                     Mitarbeiter:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="mz-down">
+                                                <p className="text-gray-900" data-oid="enljr-i">
                                                     {selectedCompany.employees.toLocaleString()}
                                                 </p>
                                             </div>
-                                            <div data-oid="wlw:eo6">
+                                            <div data-oid="bc0.g8m">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="4_jnoxy"
+                                                    data-oid="kelfz4h"
                                                 >
                                                     Marktanteil:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="99150mh">
+                                                <p className="text-gray-900" data-oid="h-m.yxn">
                                                     {selectedCompany.marketShare}%
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div data-oid="f6.cep0">
+                                    <div data-oid="q-j5mfs">
                                         <h3
                                             className="text-lg font-semibold text-gray-900 mb-3"
-                                            data-oid="ysgyl87"
+                                            data-oid="q:0e3m5"
                                         >
                                             Finanzielle Kennzahlen
                                         </h3>
-                                        <div className="space-y-3" data-oid="8dq.5c1">
-                                            <div data-oid="6hdv9ie">
+                                        <div className="space-y-3" data-oid="iruzngi">
+                                            <div data-oid="fd_fay8">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="x6li3_e"
+                                                    data-oid="bo.xn9."
                                                 >
                                                     Umsatz 2023:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="d94-ndu">
+                                                <p className="text-gray-900" data-oid="5re18a:">
                                                     €{selectedCompany.revenue2023}B
                                                 </p>
                                             </div>
-                                            <div data-oid="ojyyg7f">
+                                            <div data-oid="0q2xekn">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="sio:aos"
+                                                    data-oid="5l8xe71"
                                                 >
                                                     Umsatz 2024:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="e1lewvn">
+                                                <p className="text-gray-900" data-oid="0z-xlyn">
                                                     €{selectedCompany.revenue2024}B
                                                 </p>
                                             </div>
-                                            <div data-oid=".08.z_s">
+                                            <div data-oid="ouli.ii">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="667vsh9"
+                                                    data-oid="g-qwiqv"
                                                 >
                                                     Wachstum:
                                                 </span>
@@ -1237,21 +1237,21 @@ export default function AISearchPage() {
                                                             ? 'text-green-600'
                                                             : 'text-red-600'
                                                     }`}
-                                                    data-oid="8xyawqm"
+                                                    data-oid="xbkkvm:"
                                                 >
                                                     {selectedCompany.revenue2023 > 0
                                                         ? `${(((selectedCompany.revenue2024 - selectedCompany.revenue2023) / selectedCompany.revenue2023) * 100).toFixed(1)}%`
                                                         : 'N/A'}
                                                 </p>
                                             </div>
-                                            <div data-oid="o.pj3x-">
+                                            <div data-oid="9cb.vda">
                                                 <span
                                                     className="text-sm font-medium text-gray-600"
-                                                    data-oid="4uqny.q"
+                                                    data-oid="id9dlyg"
                                                 >
                                                     Letzte Aktualisierung:
                                                 </span>
-                                                <p className="text-gray-900" data-oid="0g9pw4l">
+                                                <p className="text-gray-900" data-oid="5-z4km3">
                                                     {selectedCompany.lastUpdated.toLocaleString(
                                                         'de-DE',
                                                     )}

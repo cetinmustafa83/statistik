@@ -30,35 +30,35 @@ export default function LoginPage() {
     return (
         <div
             className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4"
-            data-oid="0md1sob"
+            data-oid="teu4-a4"
         >
-            <div className="max-w-md w-full space-y-8" data-oid="on5tez5">
-                <div className="text-center" data-oid="jualw4l">
-                    <div className="flex justify-center mb-6" data-oid="_-k.745">
+            <div className="max-w-md w-full space-y-8" data-oid="mja6_w.">
+                <div className="text-center" data-oid="xb4pvlo">
+                    <div className="flex justify-center mb-6" data-oid="9vtrm3p">
                         <div
                             className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center"
-                            data-oid="kjdmsj-"
+                            data-oid="9eo0-5a"
                         >
-                            <span className="text-white font-bold text-2xl" data-oid="lh:.ozo">
+                            <span className="text-white font-bold text-2xl" data-oid="m.8a9l7">
                                 IT
                             </span>
                         </div>
                     </div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2" data-oid="cf9b2lv">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2" data-oid="c0j:o76">
                         Anmelden
                     </h2>
-                    <p className="text-gray-600" data-oid="099f642">
+                    <p className="text-gray-600" data-oid=".oo8yug">
                         Melden Sie sich an, um auf das Dashboard zuzugreifen
                     </p>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-xl p-8" data-oid="gjc7g8m">
-                    <form onSubmit={handleLogin} className="space-y-6" data-oid="y846ldp">
-                        <div data-oid=".t1372i">
+                <div className="bg-white rounded-2xl shadow-xl p-8" data-oid="2-rm7tf">
+                    <form onSubmit={handleLogin} className="space-y-6" data-oid="jv0g5qu">
+                        <div data-oid=":pam4o4">
                             <label
                                 htmlFor="email"
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="aegt7g:"
+                                data-oid="ydh5qe4"
                             >
                                 Benutzername
                             </label>
@@ -70,15 +70,15 @@ export default function LoginPage() {
                                 onChange={(e) => setEmail(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 placeholder="admin"
-                                data-oid="6pejdta"
+                                data-oid="6zlmnvu"
                             />
                         </div>
 
-                        <div data-oid="1.7ww2_">
+                        <div data-oid="h:c_hm_">
                             <label
                                 htmlFor="password"
                                 className="block text-sm font-medium text-gray-700 mb-2"
-                                data-oid="3ea0wfq"
+                                data-oid="v31.2gd"
                             >
                                 Passwort
                             </label>
@@ -90,23 +90,23 @@ export default function LoginPage() {
                                 onChange={(e) => setPassword(e.target.value)}
                                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                                 placeholder="admin"
-                                data-oid="9d0n_ob"
+                                data-oid=":koxc.u"
                             />
                         </div>
 
-                        <div className="flex items-center justify-between" data-oid="h_cm54w">
-                            <div className="flex items-center" data-oid="xmc56-h">
+                        <div className="flex items-center justify-between" data-oid=":i4k-3s">
+                            <div className="flex items-center" data-oid="uldrksn">
                                 <input
                                     id="remember-me"
                                     type="checkbox"
                                     className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                                    data-oid="d1vxy86"
+                                    data-oid="bkorkey"
                                 />
 
                                 <label
                                     htmlFor="remember-me"
                                     className="ml-2 block text-sm text-gray-700"
-                                    data-oid="pvj.b.z"
+                                    data-oid="ux7afax"
                                 >
                                     Angemeldet bleiben
                                 </label>
@@ -114,7 +114,7 @@ export default function LoginPage() {
                             <a
                                 href="#"
                                 className="text-sm text-blue-600 hover:text-blue-500"
-                                data-oid="16ch310"
+                                data-oid="2dgzhfa"
                             >
                                 Passwort vergessen
                             </a>
@@ -124,16 +124,16 @@ export default function LoginPage() {
                             type="submit"
                             disabled={isLoading}
                             className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                            data-oid="hzcoiav"
+                            data-oid="zcf_tm9"
                         >
                             {isLoading ? (
                                 <div
                                     className="flex items-center justify-center"
-                                    data-oid="vjsg3qr"
+                                    data-oid="x64i4zh"
                                 >
                                     <div
                                         className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"
-                                        data-oid="d0kg7ts"
+                                        data-oid="0zu.tpp"
                                     ></div>
                                     Anmeldung läuft...
                                 </div>
@@ -143,13 +143,13 @@ export default function LoginPage() {
                         </button>
                     </form>
 
-                    <div className="mt-6 text-center" data-oid="ijlry_k">
-                        <p className="text-sm text-gray-600" data-oid="tl0q10e">
+                    <div className="mt-6 text-center" data-oid="d6z2o0t">
+                        <p className="text-sm text-gray-600" data-oid="kc63vh1">
                             Noch kein Konto?{' '}
                             <a
                                 href="#"
                                 className="text-blue-600 hover:text-blue-500 font-medium"
-                                data-oid="8r8066t"
+                                data-oid="jwqo-.8"
                             >
                                 Registrieren
                             </a>
@@ -157,10 +157,10 @@ export default function LoginPage() {
                     </div>
                 </div>
 
-                <div className="text-center text-sm text-gray-500" data-oid="g6qct87">
-                    <p data-oid="w559a3a">
-                        Verwenden Sie: <strong data-oid="v-0p-.:">admin</strong> /{' '}
-                        <strong data-oid="xzujugm">admin</strong> für die Anmeldung
+                <div className="text-center text-sm text-gray-500" data-oid="16qpxni">
+                    <p data-oid="io10b3g">
+                        Verwenden Sie: <strong data-oid="2m4i-0_">admin</strong> /{' '}
+                        <strong data-oid="owt9y-c">admin</strong> für die Anmeldung
                     </p>
                 </div>
             </div>
