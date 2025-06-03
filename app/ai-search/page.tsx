@@ -5,6 +5,9 @@ import { useRouter } from 'next/navigation';
 import { db, ITCompany, QueryLog } from '../../lib/database';
 import { aiService } from '../../lib/aiService';
 import { useToast } from '../../lib/toast';
+import { DeepSearchInterface } from '../../components/DeepSearchInterface';
+import { DeepSearchResults } from '../../components/DeepSearchResults';
+import { DeepSearchResult } from '../../lib/deepSearchEngine';
 
 interface SearchFilters {
     location: string;
@@ -32,7 +35,8 @@ export default function AISearchPage() {
     const [filteredCompanies, setFilteredCompanies] = useState<ITCompany[]>([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [isSearching, setIsSearching] = useState(false);
-    const [searchResults, setSearchResults] = useState<ITCompany[]>([]);
+    const [searchResults, setSearchResults] = useState<DeepSearchResult | null>(null);
+    const [classicResults, setClassicResults] = useState<ITCompany[]>([]);
     const [queryLogs, setQueryLogs] = useState<QueryLog[]>([]);
     const [searchStats, setSearchStats] = useState<SearchStats>({
         totalQueries: 0,
