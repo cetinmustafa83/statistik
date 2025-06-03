@@ -110,13 +110,40 @@ export default function Settings() {
             return;
         }
 
+        if (!apiKey.trim()) {
+            addToast({
+                type: 'warning',
+                title: 'API-Schlüssel erforderlich',
+                message: 'Bitte geben Sie einen gültigen API-Schlüssel ein.',
+            });
+            return;
+        }
+
+        if (!prompt.trim()) {
+            addToast({
+                type: 'warning',
+                title: 'Prompt erforderlich',
+                message: 'Bitte geben Sie einen Prompt für die AI-Analyse ein.',
+            });
+            return;
+        }
+
         setIsSaving(true);
 
-        // Save settings to localStorage
+        // Save settings to localStorage (for UI state)
         localStorage.setItem('apiProvider', apiProvider);
         localStorage.setItem('apiKey', apiKey);
         localStorage.setItem('selectedModel', selectedModel);
         localStorage.setItem('customPrompt', prompt);
+
+        // Save to database (for AI service)
+        const { db } = require('../../lib/database');
+        db.saveAPISettings({
+            provider: apiProvider as 'openai' | 'openrouter' | 'deepseek',
+            apiKey: apiKey,
+            model: selectedModel,
+            prompt: prompt,
+        });
 
         setTimeout(() => {
             setIsSaving(false);
@@ -126,6 +153,47 @@ export default function Settings() {
                 message: 'Ihre AI-Einstellungen wurden erfolgreich gespeichert!',
             });
         }, 1000);
+    };
+
+    const handleTestConnection = async () => {
+        if (!apiKey.trim()) {
+            addToast({
+                type: 'warning',
+                title: 'API-Schlüssel erforderlich',
+                message: 'Bitte geben Sie einen API-Schlüssel ein, um die Verbindung zu testen.',
+            });
+            return;
+        }
+
+        setIsLoadingModels(true);
+        try {
+            const models = await aiService.getModelsForProvider(apiProvider, apiKey);
+            if (models.length > 0) {
+                addToast({
+                    type: 'success',
+                    title: 'Verbindung erfolgreich',
+                    message: `${models.length} Modelle gefunden für ${apiProvider}`,
+                });
+                setAvailableModels(models);
+                if (!selectedModel) {
+                    setSelectedModel(models[0].id);
+                }
+            } else {
+                addToast({
+                    type: 'warning',
+                    title: 'Keine Modelle gefunden',
+                    message: 'Es konnten keine verfügbaren Modelle gefunden werden.',
+                });
+            }
+        } catch (error) {
+            addToast({
+                type: 'error',
+                title: 'Verbindungsfehler',
+                message: 'Die Verbindung zum AI-Provider konnte nicht hergestellt werden.',
+            });
+        } finally {
+            setIsLoadingModels(false);
+        }
     };
 
     const goToDashboard = () => {
@@ -417,8 +485,50 @@ export default function Settings() {
                             </div>
                         </div>
 
-                        {/* Save Button */}
-                        <div className="flex justify-end" data-oid="ns2echk">
+                        {/* Action Buttons */}
+                        <div className="flex justify-between items-center" data-oid="ns2echk">
+                            <div className="flex space-x-3" data-oid="jl9zgtm">
+                                <button
+                                    onClick={handleTestConnection}
+                                    disabled={isLoadingModels || !apiKey}
+                                    className="bg-gray-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-700 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    data-oid="test-connection"
+                                >
+                                    {isLoadingModels ? (
+                                        <div className="flex items-center" data-oid="31:vqvo">
+                                            <div
+                                                className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
+                                                data-oid="3w02sy-"
+                                            ></div>
+                                            Teste...
+                                        </div>
+                                    ) : (
+                                        'Verbindung testen'
+                                    )}
+                                </button>
+
+                                <button
+                                    onClick={() => loadModelsForProvider(apiProvider, apiKey)}
+                                    disabled={
+                                        isLoadingModels || (apiProvider === 'openrouter' && !apiKey)
+                                    }
+                                    className="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                    data-oid="refresh-models"
+                                >
+                                    {isLoadingModels ? (
+                                        <div className="flex items-center" data-oid="q87hity">
+                                            <div
+                                                className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"
+                                                data-oid="kpdhplr"
+                                            ></div>
+                                            Laden...
+                                        </div>
+                                    ) : (
+                                        'Modelle aktualisieren'
+                                    )}
+                                </button>
+                            </div>
+
                             <button
                                 onClick={handleSaveSettings}
                                 disabled={isSaving}
