@@ -70,13 +70,13 @@ export function CompanyComparison({ companies }: ComparisonProps) {
     return (
         <div
             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-            data-oid="c5v7bfr"
+            data-oid="1vc.3or"
         >
-            <div className="flex justify-between items-center mb-6" data-oid="1_:aixh">
-                <h3 className="text-xl font-semibold text-gray-900" data-oid="q7:v64a">
+            <div className="flex justify-between items-center mb-6" data-oid="i1puhmx">
+                <h3 className="text-xl font-semibold text-gray-900" data-oid="uv__8k_">
                     Şirket Karşılaştırması
                 </h3>
-                <div className="flex space-x-2" data-oid="sski8wj">
+                <div className="flex space-x-2" data-oid="_qa.cu7">
                     {['revenue', 'growth', 'employees', 'market'].map((mode) => (
                         <button
                             key={mode}
@@ -86,7 +86,7 @@ export function CompanyComparison({ companies }: ComparisonProps) {
                                     ? 'bg-blue-600 text-white'
                                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                             }`}
-                            data-oid="dtj8sho"
+                            data-oid="js_byxx"
                         >
                             {mode === 'revenue'
                                 ? 'Gelir'
@@ -101,24 +101,24 @@ export function CompanyComparison({ companies }: ComparisonProps) {
             </div>
 
             {/* Company Selection */}
-            <div className="mb-6" data-oid="ow9d920">
-                <h4 className="font-medium text-gray-900 mb-3" data-oid="r6pv:-c">
+            <div className="mb-6" data-oid="bulz3fb">
+                <h4 className="font-medium text-gray-900 mb-3" data-oid="-1h.et:">
                     Karşılaştırılacak Şirketler ({selectedCompanies.length}/4)
                 </h4>
-                <div className="flex flex-wrap gap-2 mb-4" data-oid=".9x:4up">
+                <div className="flex flex-wrap gap-2 mb-4" data-oid="k26yfjw">
                     {selectedCompanies.map((company) => (
                         <div
                             key={company.rank}
                             className="flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full"
-                            data-oid="se909m:"
+                            data-oid="yzmr_3m"
                         >
-                            <span className="text-sm font-medium" data-oid="p-kyqn.">
+                            <span className="text-sm font-medium" data-oid="9m8xy1m">
                                 {company.name}
                             </span>
                             <button
                                 onClick={() => removeFromComparison(company.rank)}
                                 className="ml-2 text-blue-600 hover:text-blue-800"
-                                data-oid="g5u1-4c"
+                                data-oid="8lryyfs"
                             >
                                 ×
                             </button>
@@ -134,15 +134,15 @@ export function CompanyComparison({ companies }: ComparisonProps) {
                     }}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                     disabled={selectedCompanies.length >= 4}
-                    data-oid="upmhre2"
+                    data-oid="0cl6_i-"
                 >
-                    <option value="" data-oid="lc3w1h-">
+                    <option value="" data-oid="vw_y23l">
                         Şirket seçin...
                     </option>
                     {companies
                         .filter((c) => !selectedCompanies.find((sc) => sc.rank === c.rank))
                         .map((company) => (
-                            <option key={company.rank} value={company.rank} data-oid="0z4ayqv">
+                            <option key={company.rank} value={company.rank} data-oid="vsnm.uz">
                                 {company.name}
                             </option>
                         ))}
@@ -151,8 +151,8 @@ export function CompanyComparison({ companies }: ComparisonProps) {
 
             {/* Comparison Chart */}
             {selectedCompanies.length > 0 && (
-                <div className="space-y-4" data-oid="9_5f3w8">
-                    <h4 className="font-medium text-gray-900" data-oid="6v6znen">
+                <div className="space-y-4" data-oid="et9iwwn">
+                    <h4 className="font-medium text-gray-900" data-oid="9nqrk37">
                         {comparisonMode === 'revenue'
                             ? 'Gelir Karşılaştırması (2024)'
                             : comparisonMode === 'growth'
@@ -163,26 +163,26 @@ export function CompanyComparison({ companies }: ComparisonProps) {
                     </h4>
 
                     {getComparisonData().map((item, index) => (
-                        <div key={index} className="flex items-center space-x-4" data-oid="ki26rzj">
+                        <div key={index} className="flex items-center space-x-4" data-oid="ds_7.a:">
                             <div
                                 className="w-32 text-sm font-medium text-gray-700 truncate"
-                                data-oid=".r45w:y"
+                                data-oid="-3fam_r"
                             >
                                 {item.name}
                             </div>
-                            <div className="flex-1 flex items-center space-x-2" data-oid="ikvfdwz">
+                            <div className="flex-1 flex items-center space-x-2" data-oid="owq6reo">
                                 <div
                                     className="flex-1 bg-gray-200 rounded-full h-6 relative"
-                                    data-oid="g-u8-k0"
+                                    data-oid="yah:jfm"
                                 >
                                     <div
                                         className="bg-gradient-to-r from-blue-500 to-purple-600 h-6 rounded-full flex items-center justify-end pr-2"
                                         style={{ width: `${(item.value / maxValue) * 100}%` }}
-                                        data-oid="0c.08:1"
+                                        data-oid="1vedctk"
                                     >
                                         <span
                                             className="text-xs text-white font-medium"
-                                            data-oid="aiczqz:"
+                                            data-oid="kn23ea8"
                                         >
                                             {item.label}
                                         </span>
@@ -195,8 +195,8 @@ export function CompanyComparison({ companies }: ComparisonProps) {
             )}
 
             {selectedCompanies.length === 0 && (
-                <div className="text-center py-8 text-gray-500" data-oid="fut:yn.">
-                    <p data-oid="gbeh:5w">Karşılaştırma yapmak için şirket seçin</p>
+                <div className="text-center py-8 text-gray-500" data-oid="ypo_nay">
+                    <p data-oid="clp9:69">Karşılaştırma yapmak için şirket seçin</p>
                 </div>
             )}
         </div>

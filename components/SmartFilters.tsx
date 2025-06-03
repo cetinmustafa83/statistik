@@ -70,33 +70,33 @@ export function SmartFilters({ onFilterApply }: { onFilterApply: (filters: any) 
     return (
         <div
             className="bg-white rounded-xl shadow-sm border border-gray-100 p-6"
-            data-oid="ehvyrm."
+            data-oid="dkm.63g"
         >
-            <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="_t503-g">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="wrlismv">
                 Akıllı Filtreler
             </h3>
 
             {/* Smart Filter Suggestions */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" data-oid="m061vg9">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" data-oid="fic:r:7">
                 {smartFilters.map((filter) => (
                     <div
                         key={filter.id}
                         className="border border-gray-200 rounded-lg p-4 hover:border-blue-300 cursor-pointer transition-colors"
                         onClick={() => onFilterApply(filter.criteria)}
-                        data-oid="zlpv11f"
+                        data-oid="l7_s0o9"
                     >
-                        <div className="flex items-center justify-between mb-2" data-oid="92nh3df">
-                            <h4 className="font-medium text-gray-900" data-oid="08j:683">
+                        <div className="flex items-center justify-between mb-2" data-oid="m6nf0dl">
+                            <h4 className="font-medium text-gray-900" data-oid="m1fs49y">
                                 {filter.name}
                             </h4>
                             <span
                                 className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full"
-                                data-oid="ey5t:05"
+                                data-oid="12h8w-0"
                             >
                                 {filter.popularity}% popüler
                             </span>
                         </div>
-                        <p className="text-sm text-gray-600" data-oid="1s4.asi">
+                        <p className="text-sm text-gray-600" data-oid="3zy1bdx">
                             {filter.description}
                         </p>
                     </div>
@@ -105,23 +105,23 @@ export function SmartFilters({ onFilterApply }: { onFilterApply: (filters: any) 
 
             {/* Saved Searches */}
             {savedSearches.length > 0 && (
-                <div data-oid="f06qbbg">
-                    <h4 className="font-medium text-gray-900 mb-3" data-oid="kiyevk6">
+                <div data-oid="jj4hra3">
+                    <h4 className="font-medium text-gray-900 mb-3" data-oid=".63zqf8">
                         Kayıtlı Aramalar
                     </h4>
-                    <div className="space-y-2" data-oid="ptl16ji">
+                    <div className="space-y-2" data-oid="7kdbnen">
                         {savedSearches.slice(0, 5).map((search) => (
                             <div
                                 key={search.id}
                                 className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 cursor-pointer"
                                 onClick={() => onFilterApply(search.criteria)}
-                                data-oid=":fi.nch"
+                                data-oid="u0p.2dp"
                             >
-                                <div data-oid="2vswo3x">
-                                    <span className="font-medium text-gray-900" data-oid="rc89w_l">
+                                <div data-oid="35_f1y0">
+                                    <span className="font-medium text-gray-900" data-oid=":wdb90r">
                                         {search.name}
                                     </span>
-                                    <span className="text-sm text-gray-500 ml-2" data-oid="_dtvx:l">
+                                    <span className="text-sm text-gray-500 ml-2" data-oid="tda43o:">
                                         {new Date(search.lastUsed).toLocaleDateString('tr-TR')}
                                     </span>
                                 </div>
@@ -130,14 +130,14 @@ export function SmartFilters({ onFilterApply }: { onFilterApply: (filters: any) 
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
-                                    data-oid="bygdhb3"
+                                    data-oid="0lj5ufv"
                                 >
                                     <path
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth={2}
                                         d="M9 5l7 7-7 7"
-                                        data-oid="t6qtgu8"
+                                        data-oid="y54d707"
                                     />
                                 </svg>
                             </div>

@@ -38,42 +38,42 @@ export function SearchAnalytics() {
     };
 
     return (
-        <div className="space-y-6" data-oid="l0spwj7">
+        <div className="space-y-6" data-oid="4hlxr3s">
             {/* Key Metrics */}
             <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
-                data-oid="f.frqsq"
+                data-oid="hvifwq-"
             >
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-4"
-                    data-oid="0-0ec:g"
+                    data-oid="lmbsat."
                 >
-                    <div className="flex items-center" data-oid="4goosh7">
+                    <div className="flex items-center" data-oid="135y32o">
                         <div
                             className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center"
-                            data-oid="3sbt:go"
+                            data-oid="id.hejx"
                         >
                             <svg
                                 className="w-5 h-5 text-blue-600"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="zmk10tl"
+                                data-oid="is58e.3"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                    data-oid="r-ctwvj"
+                                    data-oid="4pjq01u"
                                 />
                             </svg>
                         </div>
-                        <div className="ml-3" data-oid="3bh:krt">
-                            <p className="text-sm font-medium text-gray-600" data-oid=":x33:u-">
+                        <div className="ml-3" data-oid="xh6a4om">
+                            <p className="text-sm font-medium text-gray-600" data-oid="xjej4tz">
                                 Gesamte Suchen
                             </p>
-                            <p className="text-xl font-bold text-gray-900" data-oid="e6whnod">
+                            <p className="text-xl font-bold text-gray-900" data-oid="v6yb7ln">
                                 {analytics.totalSearches}
                             </p>
                         </div>
@@ -82,34 +82,34 @@ export function SearchAnalytics() {
 
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-4"
-                    data-oid="160oe4:"
+                    data-oid="6t4ts0g"
                 >
-                    <div className="flex items-center" data-oid="ojl.mgi">
+                    <div className="flex items-center" data-oid="g98lk1d">
                         <div
                             className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center"
-                            data-oid="hxc.4kb"
+                            data-oid="b2w27ky"
                         >
                             <svg
                                 className="w-5 h-5 text-green-600"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="k7zsray"
+                                data-oid="o7-sm7v"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    data-oid="1c2v:-6"
+                                    data-oid="i:1:3e9"
                                 />
                             </svg>
                         </div>
-                        <div className="ml-3" data-oid="h2.1p2u">
-                            <p className="text-sm font-medium text-gray-600" data-oid="1cs4szs">
+                        <div className="ml-3" data-oid="h1moz5z">
+                            <p className="text-sm font-medium text-gray-600" data-oid="e1_dvw-">
                                 Erfolgsrate
                             </p>
-                            <p className="text-xl font-bold text-gray-900" data-oid="lqi:s58">
+                            <p className="text-xl font-bold text-gray-900" data-oid="y7ocu91">
                                 {analytics.successRate.toFixed(1)}%
                             </p>
                         </div>
@@ -118,34 +118,34 @@ export function SearchAnalytics() {
 
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-4"
-                    data-oid="s71b0t0"
+                    data-oid="trzywcc"
                 >
-                    <div className="flex items-center" data-oid="2s4o5z4">
+                    <div className="flex items-center" data-oid="htg0.ha">
                         <div
                             className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center"
-                            data-oid="4btz9ds"
+                            data-oid="::dco5c"
                         >
                             <svg
                                 className="w-5 h-5 text-yellow-600"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="yzwt8eu"
+                                data-oid="ie.6-6n"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                    data-oid="qs8f9k."
+                                    data-oid="0ff12kr"
                                 />
                             </svg>
                         </div>
-                        <div className="ml-3" data-oid="qtofl7.">
-                            <p className="text-sm font-medium text-gray-600" data-oid="dewyltn">
+                        <div className="ml-3" data-oid="xngwgo6">
+                            <p className="text-sm font-medium text-gray-600" data-oid="oqtcf3_">
                                 Ø Antwortzeit
                             </p>
-                            <p className="text-xl font-bold text-gray-900" data-oid="rgyhse6">
+                            <p className="text-xl font-bold text-gray-900" data-oid="mau9vc.">
                                 {analytics.averageResponseTime.toFixed(1)}s
                             </p>
                         </div>
@@ -154,34 +154,34 @@ export function SearchAnalytics() {
 
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-4"
-                    data-oid="e1rf.df"
+                    data-oid="a7s7x3e"
                 >
-                    <div className="flex items-center" data-oid="xq4yqp-">
+                    <div className="flex items-center" data-oid="5hrwptn">
                         <div
                             className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center"
-                            data-oid=":5c0pex"
+                            data-oid="qh597_v"
                         >
                             <svg
                                 className="w-5 h-5 text-purple-600"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
-                                data-oid="s2ukflo"
+                                data-oid="wm8.9e_"
                             >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth={2}
                                     d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                                    data-oid="xl-.n3c"
+                                    data-oid="scna-qt"
                                 />
                             </svg>
                         </div>
-                        <div className="ml-3" data-oid="gbcr3s5">
-                            <p className="text-sm font-medium text-gray-600" data-oid="9.5rtkq">
+                        <div className="ml-3" data-oid="_6qzuld">
+                            <p className="text-sm font-medium text-gray-600" data-oid="p_:ufp5">
                                 AI Abfragen
                             </p>
-                            <p className="text-xl font-bold text-gray-900" data-oid="34.stoe">
+                            <p className="text-xl font-bold text-gray-900" data-oid="lw51f0k">
                                 {analytics.totalQueries}
                             </p>
                         </div>
@@ -190,45 +190,45 @@ export function SearchAnalytics() {
             </div>
 
             {/* Charts and Trends */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" data-oid=":4u9unu">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" data-oid="ko1e9tt">
                 {/* Query Trends */}
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
-                    data-oid="uzhfpnt"
+                    data-oid="rhpd_y-"
                 >
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="h61mo98">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="gan.dof">
                         Abfrage-Trends (7 Tage)
                     </h3>
-                    <div className="space-y-3" data-oid="14dp:.q">
+                    <div className="space-y-3" data-oid="0098rha">
                         {analytics.queryTrends.map((trend, index) => (
                             <div
                                 key={index}
                                 className="flex items-center justify-between"
-                                data-oid="xmpms39"
+                                data-oid="8_d:ezb"
                             >
-                                <span className="text-sm text-gray-600" data-oid="mle7jx6">
+                                <span className="text-sm text-gray-600" data-oid="8naffxy">
                                     {new Date(trend.date).toLocaleDateString('de-DE', {
                                         weekday: 'short',
                                         month: 'short',
                                         day: 'numeric',
                                     })}
                                 </span>
-                                <div className="flex items-center space-x-2" data-oid="cc7w_3b">
+                                <div className="flex items-center space-x-2" data-oid="ptve76u">
                                     <div
                                         className="w-24 bg-gray-200 rounded-full h-2"
-                                        data-oid="lriwp7v"
+                                        data-oid="-3n.dfn"
                                     >
                                         <div
                                             className="bg-blue-500 h-2 rounded-full"
                                             style={{
                                                 width: `${Math.min((trend.count / Math.max(...analytics.queryTrends.map((t) => t.count), 1)) * 100, 100)}%`,
                                             }}
-                                            data-oid="ni63nhe"
+                                            data-oid=":z41ezt"
                                         ></div>
                                     </div>
                                     <span
                                         className="text-sm font-medium text-gray-900 w-8"
-                                        data-oid="--zy6j:"
+                                        data-oid="i61i:r2"
                                     >
                                         {trend.count}
                                     </span>
@@ -241,12 +241,12 @@ export function SearchAnalytics() {
                 {/* Provider Usage */}
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
-                    data-oid="eivot77"
+                    data-oid="xz9dew6"
                 >
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="l32qbxs">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="dbezpv:">
                         AI-Provider Nutzung
                     </h3>
-                    <div className="space-y-3" data-oid="s4vp:f2">
+                    <div className="space-y-3" data-oid=".4363_u">
                         {analytics.providerUsage.map((provider, index) => {
                             const colors = [
                                 'bg-blue-500',
@@ -259,36 +259,36 @@ export function SearchAnalytics() {
                                 <div
                                     key={index}
                                     className="flex items-center justify-between"
-                                    data-oid="cd26blw"
+                                    data-oid="-.bh46:"
                                 >
-                                    <div className="flex items-center space-x-2" data-oid="ga1ye1n">
+                                    <div className="flex items-center space-x-2" data-oid=".wnb.fk">
                                         <div
                                             className={`w-3 h-3 rounded-full ${colors[index % colors.length]}`}
-                                            data-oid="_x3ewk1"
+                                            data-oid="9.frki_"
                                         ></div>
                                         <span
                                             className="text-sm font-medium text-gray-700 capitalize"
-                                            data-oid="t2ya5ka"
+                                            data-oid="iyvv95f"
                                         >
                                             {provider.provider}
                                         </span>
                                     </div>
-                                    <div className="flex items-center space-x-2" data-oid="rd496rq">
+                                    <div className="flex items-center space-x-2" data-oid=":cocype">
                                         <div
                                             className="w-20 bg-gray-200 rounded-full h-2"
-                                            data-oid=":2eg_xm"
+                                            data-oid="5w7r_ny"
                                         >
                                             <div
                                                 className={`h-2 rounded-full ${colors[index % colors.length]}`}
                                                 style={{
                                                     width: `${(provider.count / Math.max(...analytics.providerUsage.map((p) => p.count), 1)) * 100}%`,
                                                 }}
-                                                data-oid="as0avee"
+                                                data-oid=":0amtvr"
                                             ></div>
                                         </div>
                                         <span
                                             className="text-sm text-gray-600 w-8"
-                                            data-oid="73_06h2"
+                                            data-oid="-g48pki"
                                         >
                                             {provider.count}
                                         </span>
@@ -297,7 +297,7 @@ export function SearchAnalytics() {
                             );
                         })}
                         {analytics.providerUsage.length === 0 && (
-                            <p className="text-sm text-gray-500" data-oid="86yb8j5">
+                            <p className="text-sm text-gray-500" data-oid="d.0:brw">
                                 Noch keine Daten verfügbar
                             </p>
                         )}
@@ -309,22 +309,22 @@ export function SearchAnalytics() {
             {analytics.topSearchTerms.length > 0 && (
                 <div
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-6"
-                    data-oid="--i77ad"
+                    data-oid=":-zdd9a"
                 >
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="_.72ejf">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4" data-oid="7058wfi">
                         Häufigste Suchbegriffe
                     </h3>
-                    <div className="flex flex-wrap gap-2" data-oid="fx-1_-6">
+                    <div className="flex flex-wrap gap-2" data-oid="u5l3o4s">
                         {analytics.topSearchTerms.map((term, index) => (
                             <span
                                 key={index}
                                 className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
-                                data-oid="l0g.z0d"
+                                data-oid="8wapdje"
                             >
                                 {term.term}
                                 <span
                                     className="ml-1 text-xs bg-blue-200 text-blue-700 rounded-full px-1"
-                                    data-oid=":gccngi"
+                                    data-oid="gl1mrq-"
                                 >
                                     {term.count}
                                 </span>
