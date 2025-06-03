@@ -21,6 +21,8 @@ interface APISettings {
     lastUsed: Date;
 }
 
+interface QueryLog {
+=======
 interface AIModel {
     id: string;
     name: string;
@@ -32,6 +34,8 @@ interface AIModel {
     context_length?: number;
     free?: boolean;
 }
+
+interface QueryLog {
 =======
 
 interface QueryLog {
