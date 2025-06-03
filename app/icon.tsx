@@ -27,7 +27,6 @@ export default function Icon() {
                     borderRadius: '8px',
                     fontWeight: 'bold',
                 }}
-                data-oid="smtgmx3"
             >
                 IT
             </div>

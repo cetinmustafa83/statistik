@@ -69,14 +69,14 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
     };
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-gray-100" data-oid="2bfv0mc">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100">
             {/* Table Header */}
-            <div className="px-6 py-4 border-b border-gray-100" data-oid="ml5h0hp">
-                <div className="flex justify-between items-center" data-oid="wr_.5p6">
-                    <h3 className="text-lg font-semibold text-gray-900" data-oid="8uvksj7">
+            <div className="px-6 py-4 border-b border-gray-100">
+                <div className="flex justify-between items-center">
+                    <h3 className="text-lg font-semibold text-gray-900">
                         Şirket Listesi ({data.length} sonuç)
                     </h3>
-                    <div className="text-sm text-gray-500" data-oid=".4568n9">
+                    <div className="text-sm text-gray-500">
                         Sayfa {currentPage} / {totalPages}
                     </div>
                 </div>
@@ -84,103 +84,65 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
 
             {/* Loading Indicator */}
             {isLoading && (
-                <div className="px-6 py-4 border-b border-gray-100" data-oid="mrom4vo">
-                    <div className="flex items-center space-x-2" data-oid="p_xmr4r">
-                        <div
-                            className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"
-                            data-oid="8fwtl2d"
-                        ></div>
-                        <span className="text-sm text-gray-600" data-oid="-vepnqe">
-                            Yükleniyor...
-                        </span>
+                <div className="px-6 py-4 border-b border-gray-100">
+                    <div className="flex items-center space-x-2">
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+                        <span className="text-sm text-gray-600">Yükleniyor...</span>
                     </div>
                 </div>
             )}
 
             {/* Table Content */}
-            <div className="overflow-x-auto" data-oid="-08zr26">
-                <table className="w-full" data-oid="q_:2e0i">
-                    <thead className="bg-gray-50" data-oid="p7r-m4h">
-                        <tr data-oid="sfpj8f.">
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="y64oepa"
-                            >
+            <div className="overflow-x-auto">
+                <table className="w-full">
+                    <thead className="bg-gray-50">
+                        <tr>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Rank
                             </th>
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="_rhejwk"
-                            >
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Şirket
                             </th>
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="k4th14p"
-                            >
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Lokasyon
                             </th>
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="8kni_hn"
-                            >
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Gelir 2024
                             </th>
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="-8j.e7h"
-                            >
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Çalışan
                             </th>
-                            <th
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                                data-oid="l13wwzr"
-                            >
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Pazar Payı
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="bg-white divide-y divide-gray-200" data-oid="eu4kfv8">
+                    <tbody className="bg-white divide-y divide-gray-200">
                         {paginatedData.map((company) => (
                             <tr
                                 key={company.rank}
                                 className="hover:bg-gray-50 cursor-pointer transition-colors"
                                 onClick={() => onItemClick?.(company)}
-                                data-oid="vv00.pi"
                             >
-                                <td className="px-6 py-4 whitespace-nowrap" data-oid="c4inuji">
-                                    <div
-                                        className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-                                        data-oid="31vyesg"
-                                    >
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
                                         {company.rank}
                                     </div>
                                 </td>
-                                <td className="px-6 py-4 whitespace-nowrap" data-oid="p-hfre7">
-                                    <div
-                                        className="text-sm font-medium text-gray-900"
-                                        data-oid="p1oj2to"
-                                    >
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <div className="text-sm font-medium text-gray-900">
                                         {company.name}
                                     </div>
-                                    <div className="text-sm text-gray-500" data-oid="b6gxt8u">
-                                        {company.specialty}
-                                    </div>
+                                    <div className="text-sm text-gray-500">{company.specialty}</div>
                                 </td>
-                                <td
-                                    className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                                    data-oid="p-al0j2"
-                                >
+                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     {company.location}
                                 </td>
-                                <td className="px-6 py-4 whitespace-nowrap" data-oid="ossiog-">
-                                    <div
-                                        className="text-sm font-medium text-gray-900"
-                                        data-oid="00qr5:u"
-                                    >
+                                <td className="px-6 py-4 whitespace-nowrap">
+                                    <div className="text-sm font-medium text-gray-900">
                                         €{company.revenue2024}B
                                     </div>
-                                    <div className="text-xs text-green-600" data-oid=".53.pgx">
+                                    <div className="text-xs text-green-600">
                                         +
                                         {company.revenue2023 > 0
                                             ? (
@@ -192,16 +154,10 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
                                         % büyüme
                                     </div>
                                 </td>
-                                <td
-                                    className="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
-                                    data-oid="xatu.::"
-                                >
+                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                     {company.employees.toLocaleString()}
                                 </td>
-                                <td
-                                    className="px-6 py-4 whitespace-nowrap text-sm text-gray-900"
-                                    data-oid="ap_lua8"
-                                >
+                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                     {company.marketShare}%
                                 </td>
                             </tr>
@@ -211,29 +167,23 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
             </div>
 
             {/* Pagination */}
-            <div className="px-6 py-4 border-t border-gray-100" data-oid="-naa6m9">
-                <div className="flex items-center justify-between" data-oid="cu5cywp">
-                    <div className="text-sm text-gray-700" data-oid=":osh3w0">
-                        <span className="font-medium" data-oid="1zau6-4">
-                            {(currentPage - 1) * itemsPerPage + 1}
-                        </span>
+            <div className="px-6 py-4 border-t border-gray-100">
+                <div className="flex items-center justify-between">
+                    <div className="text-sm text-gray-700">
+                        <span className="font-medium">{(currentPage - 1) * itemsPerPage + 1}</span>
                         {' - '}
-                        <span className="font-medium" data-oid="snpw28e">
+                        <span className="font-medium">
                             {Math.min(currentPage * itemsPerPage, data.length)}
                         </span>
                         {' / '}
-                        <span className="font-medium" data-oid="hzwqm-5">
-                            {data.length}
-                        </span>{' '}
-                        sonuç
+                        <span className="font-medium">{data.length}</span> sonuç
                     </div>
 
-                    <nav className="flex items-center space-x-1" data-oid="k-:ur.o">
+                    <nav className="flex items-center space-x-1">
                         <button
                             onClick={() => handlePageChange(currentPage - 1)}
                             disabled={currentPage === 1}
                             className="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                            data-oid="5ou-t25"
                         >
                             Önceki
                         </button>
@@ -252,7 +202,6 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
                                           ? 'text-gray-700 bg-white border border-gray-300 hover:bg-gray-50'
                                           : 'text-gray-400 cursor-default'
                                 }`}
-                                data-oid="kyovshr"
                             >
                                 {page}
                             </button>
@@ -262,7 +211,6 @@ export function LazyDataTable({ data, itemsPerPage = 10, onItemClick }: LazyData
                             onClick={() => handlePageChange(currentPage + 1)}
                             disabled={currentPage === totalPages}
                             className="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-                            data-oid=":h-n2z4"
                         >
                             Sonraki
                         </button>
