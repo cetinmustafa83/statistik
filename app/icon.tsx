@@ -27,7 +27,7 @@ export default function Icon() {
                     borderRadius: '8px',
                     fontWeight: 'bold',
                 }}
-                data-oid="12p_-hp"
+                data-oid="jxgmiop"
             >
                 IT
             </div>
