@@ -693,3 +693,37 @@ export default function Dashboard() {
         </div>
     );
 }
+ items-center space-x-2"
+                                                    data-oid="4rfaj5f"
+                                                >
+                                                    <div
+                                                        className="w-20 bg-gray-200 rounded-full h-2"
+                                                        data-oid="k6a0j.z"
+                                                    >
+                                                        <div
+                                                            className="bg-green-500 h-2 rounded-full"
+                                                            style={{
+                                                                width: `${Math.min(Math.max(growth * 5, 0), 100)}%`,
+                                                            }}
+                                                            data-oid="ygsqg:r"
+                                                        ></div>
+                                                    </div>
+                                                    <span
+                                                        className="text-sm font-medium text-green-600"
+                                                        data-oid="0mhg41w"
+                                                    >
+                                                        +{growth.toFixed(1)}%
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                )}
+            </main>
+        </div>
+    );
+}
