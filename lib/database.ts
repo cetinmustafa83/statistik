@@ -80,6 +80,37 @@ interface AIModel {
 
 interface QueryLog {
 =======
+interface AIModel {
+    id: string;
+    name: string;
+    description?: string;
+    pricing?: {
+        prompt: number;
+        completion: number;
+    };
+    context_length?: number;
+    free?: boolean;
+}
+
+interface QueryLog {
+=======
+
+interface QueryLog {
+=======
+interface AIModel {
+    id: string;
+    name: string;
+    description?: string;
+    pricing?: {
+        prompt: number;
+        completion: number;
+    };
+    context_length?: number;
+    free?: boolean;
+}
+
+interface QueryLog {
+=======
 
 interface QueryLog {
 =======
