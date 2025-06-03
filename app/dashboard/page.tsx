@@ -78,14 +78,14 @@ export default function Dashboard() {
 
                         <div className="flex items-center space-x-4" data-oid="izimb53">
                             <span className="text-gray-600" data-oid="eg3r947">
-                                Hoş geldin, {userEmail}
+                                Willkommen, {userEmail}
                             </span>
                             <button
                                 onClick={handleLogout}
                                 className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
                                 data-oid="t75meg:"
                             >
-                                Çıkış Yap
+                                Abmelden
                             </button>
                         </div>
                     </div>
@@ -97,10 +97,10 @@ export default function Dashboard() {
                 {/* Welcome Section */}
                 <div className="mb-8" data-oid="4f9e.3v">
                     <h2 className="text-3xl font-bold text-gray-900 mb-2" data-oid="f4x3mc1">
-                        Hoş geldiniz! 👋
+                        Willkommen! 👋
                     </h2>
                     <p className="text-gray-600" data-oid="fdb7kpe">
-                        İşte bugünkü özet ve son aktiviteleriniz
+                        Hier ist Ihre heutige Zusammenfassung und Ihre letzten Aktivitäten
                     </p>
                 </div>
 
@@ -153,7 +153,7 @@ export default function Dashboard() {
                     >
                         <div className="p-6 border-b border-gray-100" data-oid="9ict67y">
                             <h3 className="text-lg font-semibold text-gray-900" data-oid="gbos36x">
-                                Son Aktiviteler
+                                Letzte Aktivitäten
                             </h3>
                         </div>
                         <div className="p-6" data-oid=".rtascm">
@@ -195,7 +195,7 @@ export default function Dashboard() {
                     >
                         <div className="p-6 border-b border-gray-100" data-oid="qqhjdry">
                             <h3 className="text-lg font-semibold text-gray-900" data-oid="0yow12r">
-                                Hızlı İşlemler
+                                Schnellaktionen
                             </h3>
                         </div>
                         <div className="p-6" data-oid="taocykr">
@@ -228,7 +228,7 @@ export default function Dashboard() {
                                         className="text-sm font-medium text-gray-700"
                                         data-oid="xk_fif:"
                                     >
-                                        Yeni Proje
+                                        Neues Projekt
                                     </span>
                                 </button>
 
@@ -260,7 +260,7 @@ export default function Dashboard() {
                                         className="text-sm font-medium text-gray-700"
                                         data-oid="3::1_5-"
                                     >
-                                        Rapor Oluştur
+                                        Bericht erstellen
                                     </span>
                                 </button>
 
@@ -292,7 +292,7 @@ export default function Dashboard() {
                                         className="text-sm font-medium text-gray-700"
                                         data-oid="6rz9-ou"
                                     >
-                                        Kullanıcı Ekle
+                                        Benutzer hinzufügen
                                     </span>
                                 </button>
 
@@ -332,7 +332,7 @@ export default function Dashboard() {
                                         className="text-sm font-medium text-gray-700"
                                         data-oid="mj0i4c2"
                                     >
-                                        Ayarlar
+                                        Einstellungen
                                     </span>
                                 </button>
                             </div>
