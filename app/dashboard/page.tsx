@@ -43,17 +43,17 @@ export default function Dashboard() {
     }
 
     const stats = [
-        { name: 'Toplam Kullanıcı', value: '2,543', change: '+12%', changeType: 'increase' },
-        { name: 'Aktif Projeler', value: '18', change: '+3%', changeType: 'increase' },
-        { name: 'Tamamlanan Görevler', value: '127', change: '+8%', changeType: 'increase' },
-        { name: 'Gelir', value: '₺45,231', change: '-2%', changeType: 'decrease' },
+        { name: 'Gesamte Benutzer', value: '2,543', change: '+12%', changeType: 'increase' },
+        { name: 'Aktive Projekte', value: '18', change: '+3%', changeType: 'increase' },
+        { name: 'Erledigte Aufgaben', value: '127', change: '+8%', changeType: 'increase' },
+        { name: 'Umsatz', value: '€45,231', change: '-2%', changeType: 'decrease' },
     ];
 
     const recentActivities = [
-        { id: 1, action: 'Yeni proje oluşturuldu', time: '2 saat önce', user: 'Ahmet Yılmaz' },
-        { id: 2, action: 'Görev tamamlandı', time: '4 saat önce', user: 'Ayşe Kaya' },
-        { id: 3, action: 'Yeni kullanıcı kaydı', time: '6 saat önce', user: 'Mehmet Demir' },
-        { id: 4, action: 'Rapor oluşturuldu', time: '1 gün önce', user: 'Fatma Şahin' },
+        { id: 1, action: 'Neues Projekt erstellt', time: 'vor 2 Stunden', user: 'Max Mustermann' },
+        { id: 2, action: 'Aufgabe abgeschlossen', time: 'vor 4 Stunden', user: 'Anna Schmidt' },
+        { id: 3, action: 'Neue Benutzerregistrierung', time: 'vor 6 Stunden', user: 'Peter Weber' },
+        { id: 4, action: 'Bericht erstellt', time: 'vor 1 Tag', user: 'Maria Müller' },
     ];
 
     return (

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 export const metadata: Metadata = {
-    title: 'IT Dashboard - Giriş ve Yönetim Paneli',
-    description: 'Basit giriş sistemi ve dashboard uygulaması',
+    title: 'IT Dashboard - Anmeldung und Verwaltungspanel',
+    description: 'Einfaches Anmeldesystem und Dashboard-Anwendung',
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
